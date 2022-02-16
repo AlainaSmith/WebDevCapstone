@@ -5,15 +5,15 @@ import './Header.css'
 
 
 const Header = () => {
-    const activeStyle = {color:'green'};
+   
     return(
         <>
         <nav className='headerLinks'>
-        <NavLink activeStyle={activeStyle} exact to='/About'>About</NavLink>
+        <NavLink  exact to='/Homepage'>Home</NavLink>
         {" | "}
-        <a href="#contact">Contact</a>
+        <NavLink  exact to='/About'>About</NavLink>
         {" | "}
-        <NavLink activeStyle={activeStyle} exact to='/Cart'>Cart</NavLink>
+        <NavLink  exact to='/Cart'>Cart</NavLink>
         </nav>
 
         </>

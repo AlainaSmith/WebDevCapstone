@@ -1,0 +1,25 @@
+.customBowls{
+    background-color: gray;
+    height: 300px;
+    width:600px;
+    margin:auto;
+    border-radius: 10px;
+    position: relative;
+    top: 650px;
+}
+
+#custom{
+    position: relative;
+    top: 580px;
+}
+
+#bowl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#herb{
+    position: relative;
+    top: 650px;
+}

@@ -1,0 +1,7 @@
+#logo{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+}
