@@ -26,24 +26,24 @@ const handleSubmit = (e) => {
  }
 
 
-const validate = (values) => {
-    const errors = {}
-        if(!values.firstName) {
-            errors.firstName = "First Name Required"
-        }
-        if(!values.lastName) {
-            errors.lastName = "Last Name Required"
-        }
-        if(!values.email_address) {
-            errors.email_address = "Email Address Required"
-        }
-        if(!values.confirmPassword) {
-            errors.confirmPassword = "Confirm Password"
-        } else if(values.password !== values.confirmPassword) {
-            errors.confirmPassword = "Passwords Must Match"
-        }
-        return errors
-}
+// const validate = (values) => {
+//     const errors = {}
+//         if(!values.firstName) {
+//             errors.firstName = "First Name Required"
+//         }
+//         if(!values.lastName) {
+//             errors.lastName = "Last Name Required"
+//         }
+//         if(!values.email_address) {
+//             errors.email_address = "Email Address Required"
+//         }
+//         if(!values.confirmPassword) {
+//             errors.confirmPassword = "Confirm Password"
+//         } else if(values.password !== values.confirmPassword) {
+//             errors.confirmPassword = "Passwords Must Match"
+//         }
+//         return errors
+// }
 
 
 return(

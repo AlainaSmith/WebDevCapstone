@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 import {AiOutlineHeart} from 'react-icons/ai'
 import CustomBowl from './CustomWoodBowls';
 import HerbalTinctures from './Herbal';
+import Flowers from './Flowers';
+import Aleut from './Aleut';
+
 
 const Homepage = () => {
     return(
@@ -28,8 +31,11 @@ const Homepage = () => {
         <div className='option3'><p>Fresh cut flower orders (local)</p></div>
         </div>
         {/* <img className="pic" src="https://images.unsplash.com/photo-1567080586917-e6ab6aa0df85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bHVtYmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
-        
-        <div className="columnBar"></div> */}
+         */}
+{/* <Aleut /> */}
+        <div id='forsale'><h2>Premade bowls & platters</h2></div>
+        <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+        {/* <div className="columnBar"></div> */}
 
         <div class="bowls">
         <form className="bowls"id="bowl1">
@@ -86,7 +92,7 @@ const Homepage = () => {
 
         <form className="bowls"id="bowl5">
             <div>
-            <NavLink exact to='/SmallWalnutBowl2'>
+            <NavLink exact to='/WalnutPlatter'>
             <img id="bowl5" height="150px" width="150px" src={require('./photos/IMG_7909.jpg')} />
             </NavLink>
                 <h4>
@@ -96,9 +102,31 @@ const Homepage = () => {
                     <AiOutlineHeart /></div>
             </div>
         </form>
+
+        <form className="bowlsTwo"id="bowl6">
+            <div>
+            <NavLink exact to='/OsageOrangeBowl'>
+            <img id="bowl5" height="150px" width="150px" src={require('./photos/IMG_7898.PNG')} />
+            </NavLink>
+                <h4>
+                    Osage Orange Bowl
+                </h4>
+                <div id='icon'>
+                    <AiOutlineHeart /></div>
+            </div>
+        </form>
+
+
+
+
+
       </div>
     <CustomBowl />
     <HerbalTinctures />
+    <Flowers />
+
+
+
     </div>
     )
 }

@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3500 ;
 const Sequelize = require('sequelize')
@@ -25,7 +24,7 @@ app.use(cors());
 
 //Put endpoints here
 
-app.post('/seed', seed)
+app.post('/seed', seed) 
 console.log(seed)
 
 
@@ -62,8 +61,8 @@ app.post('/login', async (req, res) => {
   const validUser = await sequelize.query(`
     SELECT * FROM users WHERE 
     email_address = '${emailAddress}' 
-      
   `).catch((err) => console.log(err))
+
   if(!validUser[0][0]){
     res.status(401).send('email address is incorrect')
   }
@@ -74,12 +73,28 @@ app.post('/login', async (req, res) => {
         id: validUser[0][0].id,
         email_address: validUser[0][0].email_address
       }
-      response.status(200).send(object)
+      res.status(200).send(object)
    
     } else {
-      response.status(401).send({message:'Info is Incorrect'})
+      res.status(401).send({message:'Info is Incorrect'})
     }
    
+})
+
+app.post('/subscribe', async(req,res) => {
+  const {firstName, lastName, email_address} = req.body
+  const subscribeUser = await sequelize.query(`
+    SELECT * FROM usersSub WHERE 
+    firstName = '${firstName}' 
+    lastName = '${lastName}'
+    email_address = '${email_address}'
+  `).catch((err) => console.log(err))
+  // if(subscribeUser === )
+  
+})
+
+app.post('/SmallWalnutBowl', async(req,res) => {
+  
 })
 
 

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Login from "./Login";
 import Register from "./Register";
 import Header from "./Header";
+import Subscribe from "./Subscribe";
 
 const Cart = () => {
 
@@ -11,7 +12,7 @@ const Cart = () => {
        <Header />
         <Login />
         <Register />
-
+        <Subscribe />
            
         </div>
     )

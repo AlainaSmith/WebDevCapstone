@@ -5,17 +5,18 @@ const HerbalTinctures= () => {
     return(
       <div>
            
-            <h2 id='herb'>Herbal Tinctures</h2>
+            
 
             <div className="customBowls">
-            Select Your Size:
+            <h2>Herbal Tinctures</h2>
+            <h2>Select Your Size:</h2>
                 <form>
                 <label><input type = "radio" name = "phone" value ="bowl"/>2oz</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>4oz</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>6oz</label>
                 </form>
 
-            Herb/Fungi:
+<h2>Herb/Fungi:</h2>
             <form>
             <label><input type = "radio" name = "phone" value ="bowl"/>Dandelion</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Licorice</label>
@@ -23,7 +24,7 @@ const HerbalTinctures= () => {
                 <label><input type = "radio" name = "phone" value ="bowl"/>Lemon Balm</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Chaga</label>
             </form>
-            <input type = "submit"/>
+            <button>Add to cart</button>
             </div>
     </div>
     )

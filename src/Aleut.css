@@ -1,0 +1,13 @@
+.aleut{
+    height: 250px;
+    width: 400px;
+    background-color: grey;
+    color:rgb(250, 245, 245);
+    border-radius: 100px;
+    
+    }
+
+h3{
+    word-wrap: break-word;
+    
+}

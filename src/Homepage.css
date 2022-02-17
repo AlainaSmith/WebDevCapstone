@@ -10,9 +10,6 @@
    transform: scale(3.9);
    height: 100px;
    width: 30px
-   
-
-  
 }
 
 .headerLinks{
@@ -26,20 +23,37 @@
     padding: 15px
 }
 
+h1{
+    font-family: roboto;
+   align-items: center;
+   margin-top: 70px;
+}
 .columnBar{
     display:flex;
     justify-content:flex-end;
     flex-direction: column;
-    background-color: rgb(248, 88, 66);
+    background-color: rgb(250, 126, 115);
     height: 150vh;
     width: 40px;
    margin-left: auto;
    position: relative;
-   right: 60px;
-   top:-150px;
-   padding: 40px
+   top: -220px;
+   margin-right:70px;
+   padding: 40px;
+}
+
+#sidebar{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    right: 100px;
+    top: -650px
 
 }
+
+
+
+
 
 #options{
     display: flex;
@@ -49,25 +63,24 @@
     width: 150px;
     margin:auto;
     
-    
 }
 
 .option1{
   background-color: rgb(79, 153, 149);  
   position: relative;
-  top: 90px;
+  top: 110px;
   border-radius: 20px;
   color:white;
-  border: black 1px solid;
+  box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
 }
 
 .option2{
 background-color: rgb(79, 153, 149);
 position: relative;
-top: 150px;
+top: 170px;
 border-radius: 20px;
 color:white;
-border: black 1px solid;
+box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
 }
 
 .option3{
@@ -76,18 +89,24 @@ border: black 1px solid;
     top: 230px;
     border-radius: 20px;
     color:white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
 }
 
+#forsale{
+    display: flex;
+    margin-left:100px;
+    position: relative;
+    top: 380px
+    
+}
 
 .bowls{
     display:flex;
     justify-content: center;
     height: 150px;
     width: 150px;
-    margin:auto;
-    position:relative;
-    top: 200px;
+    margin-top: -840px;
+    margin-left: 490px
 }
 
 #bowl1{
@@ -109,3 +128,4 @@ border: black 1px solid;
 #bowl5{
     margin:20px
 }
+

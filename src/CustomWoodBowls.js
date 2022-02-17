@@ -8,14 +8,14 @@ const CustomBowl = () => {
             <h1 id='custom'>Custom Wood Bowls</h1>
 
             <div className="customBowls">
-            Select Your Size:
+            <h2>Select Your Size:</h2>
                 <form>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Small</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Medium</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Large</label>
                 </form>
 
-            Wood Species:
+                <h2>Wood Species:</h2>
             <form>
             <label><input type = "radio" name = "phone" value ="bowl"/>Walnut</label>
                 <label><input type = "radio" name = "phone" value ="bowl"/>Cherry</label>
@@ -24,11 +24,11 @@ const CustomBowl = () => {
                 <label><input type = "radio" name = "phone" value ="bowl"/>Red Cedar</label>
             </form>
 
-            Special Notes - woodburn details/etc:
+            <h2>Special Notes - woodburn details/etc:</h2>
             <form>
-             <label><textarea required name = "feedbackText" cols = "20" rows="6"></textarea></label>
+             <label><textarea required name = "feedbackText" cols = "40" rows="3"></textarea></label>
              </form>
-             <input type = "submit"/>
+             <button>Add to cart</button>
         </div>
 
        
@@ -37,3 +37,9 @@ const CustomBowl = () => {
 }
 
 export default CustomBowl
+
+
+
+
+
+
