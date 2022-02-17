@@ -46,8 +46,8 @@ h1{
     display: flex;
     margin-left: auto;
     position: relative;
-    right: 100px;
-    top: -650px
+    right: 150px;
+    top: -350px
 
 }
 
@@ -66,7 +66,7 @@ h1{
 }
 
 .option1{
-  background-color: rgb(79, 153, 149);  
+  background-color: rgb(114, 170, 163);  
   position: relative;
   top: 110px;
   border-radius: 20px;
@@ -75,21 +75,24 @@ h1{
 }
 
 .option2{
-background-color: rgb(79, 153, 149);
+background-color: rgb(114, 170, 163);
 position: relative;
 top: 170px;
 border-radius: 20px;
 color:white;
 box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
+
 }
 
 .option3{
-    background-color: rgb(79, 153, 149);
+    background-color: rgb(114, 170, 163);
     position: relative;
     top: 230px;
     border-radius: 20px;
     color:white;
     box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
+    
+    text-align: center;
 }
 
 #forsale{
@@ -109,9 +112,23 @@ box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
     margin-left: 490px
 }
 
-#bowl1{
-    margin: 20px
+.bowlsTwo{
+    display:flex;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    margin-top: 140px;
+   margin-left: 490px;
 }
+#bowl1{
+    margin: 20px;
+}
+
+/* #bowlOne{
+    background-color: rgb(192, 177, 177);
+    height: 40px;
+    width: 100px;
+} */
 
 #bowl2{
     margin: 20px;
@@ -126,6 +143,10 @@ box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
 }
 
 #bowl5{
+    margin:20px
+}
+
+#bowl6{
     margin:20px
 }
 

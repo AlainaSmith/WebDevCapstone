@@ -37,13 +37,15 @@ const Homepage = () => {
         <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
         {/* <div className="columnBar"></div> */}
 
+
+
         <div class="bowls">
         <form className="bowls"id="bowl1">
             <div>
             <NavLink exact to='/SmallWalnutBowl'>
             <img id="bowl1" height="150px" width="150px" src={require('./photos/IMG_7910.PNG')} />
             </NavLink>
-                <h4>
+                <h4 id='bowlOne'>
                     Small Walnut Bowl
                 </h4>
                 <div id='icon'>
@@ -90,7 +92,26 @@ const Homepage = () => {
             </div>
         </form>
 
-        <form className="bowls"id="bowl5">
+        
+      </div>
+
+
+<div className='bowlsTwo'>
+        <form className="bowlsTwo"id="bowl6">
+            <div>
+            <NavLink exact to='/OsageOrangeBowl'>
+            <img id="bowl6" height="150px" width="150px" src={require('./photos/IMG_7898.PNG')} />
+            </NavLink>
+                <h4>
+                    Osage Orange Bowl
+                </h4>
+                <div id='icon'>
+                    <AiOutlineHeart /></div>
+            </div>
+        </form>
+
+
+        <form className="bowlsTwo"id="bowl5">
             <div>
             <NavLink exact to='/WalnutPlatter'>
             <img id="bowl5" height="150px" width="150px" src={require('./photos/IMG_7909.jpg')} />
@@ -102,25 +123,11 @@ const Homepage = () => {
                     <AiOutlineHeart /></div>
             </div>
         </form>
-
-        <form className="bowlsTwo"id="bowl6">
-            <div>
-            <NavLink exact to='/OsageOrangeBowl'>
-            <img id="bowl5" height="150px" width="150px" src={require('./photos/IMG_7898.PNG')} />
-            </NavLink>
-                <h4>
-                    Osage Orange Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
+        </div>
 
 
 
 
-
-      </div>
     <CustomBowl />
     <HerbalTinctures />
     <Flowers />
