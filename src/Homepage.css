@@ -21,6 +21,7 @@
     width: 100%;
     margin: auto;
     padding: 15px
+    
 }
 
 h1{
@@ -47,26 +48,26 @@ h1{
     display: flex;
     margin-left: auto;
     position: relative;
-    top: -420px
+    top: -880px
 }
 #sidebar3{
     display: flex;
     margin-left: auto;
     position: relative;
-    top: -1620px
+    top: -2080px
 }
 
 #sidebar2{
     display: flex;
     margin-right: auto;
     position: relative;
-    top: -1620px
+    top: -2090px
 }
 #sidebar4{
     display: flex;
     margin-right: auto;
     position: relative;
-    top: -2820px
+    top: -3320px
 }
 
 #options{
@@ -114,9 +115,11 @@ padding:10px;
     box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
     padding:10px;
     text-align: center;
+    z-index:3
 }
 .option3:hover{
     background-color: teal;
+  
 }
 #forsale{
     display: flex;
@@ -132,12 +135,21 @@ padding:10px;
     justify-content: center;
     position: relative;
     top: 350px;
-    left: 160px
+    left: 160px;
+    z-index: 5
 }
 .bowls{
     height: 150px;
     width: 150px;
     margin: auto;
+}
+
+#bowlOne{
+    background-color: rgba(128, 128, 128, 0.568);
+    width: 160px;
+    height:30px;
+    padding:20px;
+    border-radius: 10px;
 }
 
 .bowlsFlexTwo{
@@ -146,19 +158,32 @@ padding:10px;
     position: relative;
     top: 280px;
     right:560px
-
-   
 }
 
 .bowlsTwo{
     height: 150px;
     width: 150px;
-    
 }
 
+.cardBackground{
+   
+    background-color: gray;
+    height: 140px;
+    width: 200px;
+
+}
+
+.cardBackground2{
+   
+    background-color: gray;
+    height: 140px;
+    width: 200px;
+}
 
 #bowl1{
     margin: 20px;
+ 
+    
    
 }
 
@@ -174,6 +199,14 @@ padding:10px;
 
 #bowl2{
     margin: 20px;
+}
+
+#bowlTwo{
+    background-color: rgba(128, 128, 128, 0.568);
+    width: 160px;
+    height:30px;
+    padding:20px;
+    border-radius: 10px;
 }
 
 #bowl3{

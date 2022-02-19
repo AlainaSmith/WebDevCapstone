@@ -1,0 +1,22 @@
+
+
+.cart{
+    position:relative;
+    top:-42px;
+    right:-940px;
+    z-index:7;
+    background-color: rgb(214, 166, 186);
+    height:10px;
+    width:10px;
+   
+}
+
+.buttons{
+    position:relative;
+    top:550px;
+}
+
+#remove{
+    position:relative;
+    right:30px
+}

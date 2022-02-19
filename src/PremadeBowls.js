@@ -12,26 +12,24 @@ return(
 <div className="bowlsFlex">
 
 <form className="bowls"id="bowl1">
-    <div>
+    <div className="cardBackground">
     <NavLink exact to='/SmallWalnutBowl'>
     <img id="bowl1" height="150px" width="150px" src={require('./photos/IMG_7910.PNG')} />
     </NavLink>
         <h4 id='bowlOne'>
             Small Walnut Bowl
         </h4>
-        <div id='icon'>
-            <AiOutlineHeart /></div>
     </div>
 </form>
 
 
 
 <form className="bowls"id="bowl2">
-    <div>
+<div className="cardBackground2">
     <NavLink exact to='/SmallPadaukBowl'>
     <img id="bowl2" height="150px" width="150px" src={require('./photos/IMG_7903.jpg')} />
     </NavLink>
-        <h4>
+        <h4 id='bowlTwo'>
             Small Padauk Bowl
         </h4>
         <div id='icon'>

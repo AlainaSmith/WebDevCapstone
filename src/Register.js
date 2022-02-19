@@ -22,10 +22,6 @@ const handleSubmit = (e) => {
 })
 .then((res) =>{
     console.log(res)
-    // setFirstName(" ")
-    // setLastName(" ")
-    // setEmailAddress(" ")
-    // setPassword(" ")
 
 })
 

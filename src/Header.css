@@ -3,9 +3,14 @@
     font-size: 25px;
     justify-content: space-between;
     position:relative;
-    right: 30px
+    right: 30px;
+    z-index:4
 }
 
+.cartHome{
+position:relative;
+top:13px;
+}
 #nav1{
     color:black;
     margin: 90px

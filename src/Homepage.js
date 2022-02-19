@@ -15,6 +15,7 @@ import PremadeBowls from './PremadeBowls';
 import Register from './Register';
 import Login from './Login';
 
+
 const Homepage = () => {
 //     const { products } = data;
 // const [cartItems, setCartItems] = useState([])
