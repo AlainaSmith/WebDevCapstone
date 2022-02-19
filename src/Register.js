@@ -22,7 +22,13 @@ const handleSubmit = (e) => {
 })
 .then((res) =>{
     console.log(res)
+    // setFirstName(" ")
+    // setLastName(" ")
+    // setEmailAddress(" ")
+    // setPassword(" ")
+
 })
+
  }
 
 
@@ -48,8 +54,15 @@ const handleSubmit = (e) => {
 
 return(
     <>
-    <h2>Register</h2>
-    <form className="registerForm">
+    
+    <div class="container">
+      
+    <span className="circle1"></span>
+    <span className="circle2"></span>
+    
+    <form>
+    <div className='inputs'>
+    <h3>Create An Account</h3>
     <input 
         type="text"
         name="First Name"
@@ -75,7 +88,10 @@ return(
       onChange={(e)=>{setPassword(e.target.value)}}
       />
       <button type="button" onClick={handleSubmit}>Register</button>
+      </div>
     </form>
+    </div>
+    
     </>
     )
 }

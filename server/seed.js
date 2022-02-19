@@ -38,21 +38,26 @@ seed: (req, res) => {
             cart_id INTEGER REFERENCES user_cart(cart_id)
         ), 
 
+        CREATE TABLE cart(
+            cart_id SERIAL PRIMARY KEY,
+            user_id REFERENCES users(user_id),
+
+        )
+
         CREATE TABLE custom_wood_bowls(
             custom_id SERIAL PRIMARY KEY,
             cart_id INTEGER REFERENCES user_cart(cart_id),
             size VARCHAR(100) NOT NULL,
             species VARCHAR(100) NOT NULL,
-            price VARCHAR(100) NOT NULL,
             notes VARCHAR(1000) NULL
             );
 
-        INSERT INTO custom_wood_bowls(size, species, price),
+        INSERT INTO custom_wood_bowls(size, species),
         VALUES 
-        (small, cherry, 20), 
-        (small, Walnut, 20),
-        (small, Cherry , 20),
-        (small, Osage Orange, 20),
+        (small, cherry), 
+        (small, Walnut),
+        (small, Cherry),
+        (small, Osage Orange),
         (small, Red Cedar, 20),
         (small, Maple, 20),
         (medium, Walnut, 35),
@@ -109,10 +114,9 @@ seed: (req, res) => {
 
         CREATE TABLE userSub(
             userSub_id SERIAL PRIMARY KEY,
-            user_id INTEGER REFERENCES users(user_id),
-            firstName VARCHAR REFERENCES users(firstName),
-            lastName VARCHAR REFERENCES users(lastName),
-            email_address VARCHAR REFERENCES users(email_address)
+            firstName VARCHAR(100),
+            lastName VARCHAR(100),
+            email_address VARCHAR(100) 
         );
 
         INSERT INTO users 

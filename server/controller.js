@@ -20,7 +20,7 @@ module.exports = {
         .catch(err => console.log(err))
     },
 
-    getCustom_Wood_bowls: async(req, res) => {
+    getCustomWoodbowls: async(req, res) => {
         sequelize.query(`SELECT * FROM custom_wood_bowls`)
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))

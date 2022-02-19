@@ -81,17 +81,28 @@ app.post('/login', async (req, res) => {
    
 })
 
-app.post('/subscribe', async(req,res) => {
-  const {firstName, lastName, email_address} = req.body
-  const subscribeUser = await sequelize.query(`
-    SELECT * FROM usersSub WHERE 
-    firstName = '${firstName}' 
-    lastName = '${lastName}'
-    email_address = '${email_address}'
-  `).catch((err) => console.log(err))
-  // if(subscribeUser === )
-  
+app.post('/CustomWoodBowls', async(req,res) => {
+  const {size, species} = req.body
+  const bowlCart = await sequelize.query(`
+  SELECT * FROM custom_wood_bowls WHERE
+  size = '${size}'
+  species = '${species}`)
+  .catch((err)=>console.log(err))
 })
+
+//can store locally in browswer storage, or
+
+// app.post('/subscribe', async(req,res) => {
+//   const {firstName, lastName, email_address} = req.body
+//   const subscribeUser = await sequelize.query(`
+//     SELECT * FROM usersSub WHERE 
+//     firstName = '${firstName}' 
+//     lastName = '${lastName}'
+//     email_address = '${email_address}'
+//   `).catch((err) => console.log(err))
+//   // if(subscribeUser === )
+  
+// })
 
 app.post('/SmallWalnutBowl', async(req,res) => {
   

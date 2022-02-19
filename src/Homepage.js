@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Homepage.css' 
 import Header from './Header'
 import { NavLink } from "react-router-dom";
@@ -6,10 +6,43 @@ import {AiOutlineHeart} from 'react-icons/ai'
 import CustomBowl from './CustomWoodBowls';
 import HerbalTinctures from './Herbal';
 import Flowers from './Flowers';
-import Aleut from './Aleut';
-
+// import Aleut from './Aleut';
+// import Main from './Main';
+// import Cart from './Cart';
+// import data from './data';
+import AddCart from './AddCart';
+import PremadeBowls from './PremadeBowls';
+import Register from './Register';
+import Login from './Login';
 
 const Homepage = () => {
+//     const { products } = data;
+// const [cartItems, setCartItems] = useState([])
+// const onAdd = (product) =>{
+//     const exist = cartItems.find((x)=>x.id === product.id)
+//     if(exist){
+//         setCartItems(
+//             cartItems.map((x)=> 
+//             x.id === product.id ? { ...exist, qty: exist.qty +1} : x
+//         )
+//     )
+//   } else {
+//       setCartItems([...cartItems, { ...product, qty: 1 }])
+//   }
+
+
+//   const onRemove = (product) => {
+//     const exist = Cart.items.find((x)=> x.id === product.id)
+//     if(exist.qty === 1) {
+//         setCartItems(cartItems.filter((x)=> x.id !== product.id))
+//     } else {
+//         setCartItems(
+//             cartItems.map((x) => 
+//             x.id === product.id ? { ...exist, qty: exist.qty - 1} : x)
+//         )
+//     }
+
+
     return(
     <div>
   
@@ -20,123 +53,52 @@ const Homepage = () => {
         <Header />
         
         <h1>Hopes & Trees Crafts</h1>
-        
+
        <div id="options">
         <div className='option1'>
-        <p>Custom Woodwork</p>
+        <h3>Custom Woodwork</h3>
         </div>
         <div className='option2'>
-        <p>Herbal Tinctures</p>
+        <h3>Herbal Tinctures</h3>
         </div>
-        <div className='option3'><p>Fresh cut flower orders (local)</p></div>
+        <div className='option3'>
+        <h3>Classes</h3></div>
         </div>
         {/* <img className="pic" src="https://images.unsplash.com/photo-1567080586917-e6ab6aa0df85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bHVtYmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
          */}
 {/* <Aleut /> */}
-        <div id='forsale'><h2>Premade bowls & platters</h2></div>
-        <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+        
+        
         {/* <div className="columnBar"></div> */}
 
 
+<PremadeBowls />
 
-        <div class="bowls">
-        <form className="bowls"id="bowl1">
-            <div>
-            <NavLink exact to='/SmallWalnutBowl'>
-            <img id="bowl1" height="150px" width="150px" src={require('./photos/IMG_7910.PNG')} />
-            </NavLink>
-                <h4 id='bowlOne'>
-                    Small Walnut Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-        
-        <form className="bowls"id="bowl2">
-            <div>
-            <NavLink exact to='/SmallPadaukBowl'>
-            <img id="bowl2" height="150px" width="150px" src={require('./photos/IMG_7903.jpg')} />
-            </NavLink>
-                <h4>
-                    Small Padauk Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-
-        <form className="bowls"id="bowl3">
-            <div>
-            <NavLink exact to='/SmallWalnutBowl2'>
-            <img id="bowl3" height="150px" width="150px" src={require('./photos/IMG_7907.PNG')} />
-            </NavLink>
-                <h4>
-                    Small Walnut Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-
-        <form className="bowls"id="bowl4">
-            <div>
-            <NavLink exact to='/SmallWalnutBowl2'>
-            <img id="bowl4" height="150px" width="150px" src={require('./photos/FE7E9916-D897-4E65-8022-2001AFA3B22F (1).JPG')} />
-            </NavLink>
-                <h4>
-                    Small Padauk Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-
-        
-      </div>
-
-
-<div className='bowlsTwo'>
-        <form className="bowlsTwo"id="bowl6">
-            <div>
-            <NavLink exact to='/OsageOrangeBowl'>
-            <img id="bowl6" height="150px" width="150px" src={require('./photos/IMG_7898.PNG')} />
-            </NavLink>
-                <h4>
-                    Osage Orange Bowl
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-
-
-        <form className="bowlsTwo"id="bowl5">
-            <div>
-            <NavLink exact to='/WalnutPlatter'>
-            <img id="bowl5" height="150px" width="150px" src={require('./photos/IMG_7909.jpg')} />
-            </NavLink>
-                <h4>
-                    Walnut Platter
-                </h4>
-                <div id='icon'>
-                    <AiOutlineHeart /></div>
-            </div>
-        </form>
-        </div>
+<div className="register">
+<Register />
+<Login />
+</div>
 
 
 
-
-    <CustomBowl />
+    {/* <CustomBowl />
     <HerbalTinctures />
-    <Flowers />
-
-
+    <Flowers /> */}
+        
+    {/* <Main products={products}></Main>
+        <Cart onAdd={onAdd} cartItems={cartItems}></Cart> */}
+    
+    <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+    <img id="sidebar2" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+    <img id="sidebar3" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+    <img id="sidebar4" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
 
     </div>
     )
 }
 
 export default Homepage
+
+
+
 

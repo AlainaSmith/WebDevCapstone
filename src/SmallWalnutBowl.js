@@ -15,6 +15,7 @@ const handleSubmit = (e) => {
     return(
         <div>
         <Header />
+        
         <h2>Hopes & Trees</h2>
             <h1>Walnut Bowl</h1>
             <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7910.PNG')} />
