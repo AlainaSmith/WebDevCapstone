@@ -17,13 +17,10 @@ const SmallWalnutBowl = () => {
 // }
     return(
         <div>
-
-
-
-
-        
         <Header />
         <CartCounter />
+
+        <img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
         <h2>Hopes & Trees</h2>
             <h1>Walnut Bowl</h1>
             <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7910.PNG')} />

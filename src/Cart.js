@@ -4,15 +4,15 @@ import Login from "./Login";
 import Register from "./Register";
 import Header from "./Header";
 import Subscribe from "./Subscribe";
-
+import Header2 from "./Header2";
 const Cart = (props) => {
     // const {cartItems, onAdd, onRemove} = props
     // const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
     // const totalPrice = itemsPrice
     return(
         <div>
-       <Header />
-     
+   
+     Cart
       
         <Subscribe />
 

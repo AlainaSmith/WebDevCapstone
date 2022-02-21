@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import './Homepage.css' 
-import Header from './Header'
+import Header2 from './Header2'
 import { NavLink } from "react-router-dom";
-import {AiOutlineHeart} from 'react-icons/ai'
-import CustomBowl from './CustomWoodBowls';
+import Video from './Video';
+
 import HerbalTinctures from './Herbal';
-import Flowers from './Flowers';
+
 // import Aleut from './Aleut';
 // import Main from './Main';
 // import Cart from './Cart';
@@ -14,85 +14,82 @@ import AddCart from './AddCart';
 import PremadeBowls from './PremadeBowls';
 import Register from './Register';
 import Login from './Login';
-
+import Top from './Top';
+import useCollapse from 'react-collapsed';
+import Classes from './Classes';
+import {FaUserCircle} from 'react-icons/fa'
+import Badge from "@material-ui/core/Badge";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Homepage = () => {
-//     const { products } = data;
-// const [cartItems, setCartItems] = useState([])
-// const onAdd = (product) =>{
-//     const exist = cartItems.find((x)=>x.id === product.id)
-//     if(exist){
-//         setCartItems(
-//             cartItems.map((x)=> 
-//             x.id === product.id ? { ...exist, qty: exist.qty +1} : x
-//         )
-//     )
-//   } else {
-//       setCartItems([...cartItems, { ...product, qty: 1 }])
-//   }
+const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
+return(
+ <div>
+  <div className='pinkHeader'>
+   <div className='wrapper'>
+   <h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
+   </div>
+  <div className='greyHeader'>
+    <div id='options'>
+      <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
+      <a id='two' href="#tinctures">Herbal Tinctures</a>
+      <a id='three' href="#classes">Classes</a>
+      <div id='user'><FaUserCircle/></div>
+    </div>
+    <div className="cart">
+        <Badge color="secondary">
+                <a href='/cart'></a>
+          <ShoppingCartIcon />{" "}
+        </Badge>
+    </div>
+   </div>
+  </div> 
 
-//   const onRemove = (product) => {
-//     const exist = Cart.items.find((x)=> x.id === product.id)
-//     if(exist.qty === 1) {
-//         setCartItems(cartItems.filter((x)=> x.id !== product.id))
-//     } else {
-//         setCartItems(
-//             cartItems.map((x) => 
-//             x.id === product.id ? { ...exist, qty: exist.qty - 1} : x)
-//         )
-//     }
+<div className='thinLine'></div>
+        <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
+    
 
-
-    return(
-    <div>
-  
-        {/* <heading className="headerLinks">
-            <h2>About | Contact | Cart</h2>
-        </heading> */}
-
-        <Header />
-        
-        <h1>Hopes & Trees Crafts</h1>
-
-       <div id="options">
-        <div className='option1'>
+{/* <PremadeBowls /> */}
+{/* <div id="options">
+  <div className='option1'>
         <h3>Custom Woodwork</h3>
-        </div>
-        <div className='option2'>
+        
+
+</div>
+
+<div className='option2'>
         <h3>Herbal Tinctures</h3>
-        </div>
-        <div className='option3'>
+        
+ </div>
+
+
+<div className='option3'>
         <h3>Classes</h3></div>
-        </div>
+</div> */}
         {/* <img className="pic" src="https://images.unsplash.com/photo-1567080586917-e6ab6aa0df85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bHVtYmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
          */}
-{/* <Aleut /> */}
+
         
         
         {/* <div className="columnBar"></div> */}
+        
 
 
-<PremadeBowls />
 
-<div className="register">
+{/* <div className="register" id='woodBowl'>
 <Register />
 <Login />
+<Top />
 </div>
 
 
+<Video /> */}
 
-    {/* <CustomBowl />
-    <HerbalTinctures />
-    <Flowers /> */}
-        
-    {/* <Main products={products}></Main>
-        <Cart onAdd={onAdd} cartItems={cartItems}></Cart> */}
-    
     <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
-    <img id="sidebar2" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+   
     <img id="sidebar3" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
-    <img id="sidebar4" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+    
 
     </div>
     )
@@ -102,4 +99,11 @@ export default Homepage
 
 
 
+ {/* <heading className="headerLinks">
+            <h2>About | Contact | Cart</h2>
+        </heading> */}
 
+        {/* <Header /> */}
+        
+        {/* <Aleut /> */}
+        {/* <h1>Hopes & Trees Crafts</h1> */}

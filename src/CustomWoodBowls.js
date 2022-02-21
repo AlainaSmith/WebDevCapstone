@@ -86,9 +86,3 @@ const [itemCount, setItemCount] = React.useState(1);
 }
 
 export default CustomBowl
-
-
-
-
-
-

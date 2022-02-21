@@ -7,7 +7,7 @@ import './cartCounter.css'
 import axios from "axios";
 
 const CartCounter = () => {
-    const [itemCount, setItemCount] = React.useState(1);
+    const [itemCount, setItemCount] = React.useState('');
 
 
     const handleSubmit = (e) => {

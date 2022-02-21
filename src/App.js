@@ -20,6 +20,7 @@ const App = () => {
          <Route path='/Cart' element={<Cart/>}/>
          <Route path='/SmallWalnutBowl' element={<SmallWalnutBowl/>}/>
          <Route path='/CustomWoodBowls' element={<CustomBowl/>}/>
+         
          </Routes>
          </BrowserRouter>
         
