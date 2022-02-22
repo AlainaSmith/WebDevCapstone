@@ -1,7 +1,7 @@
 .pinkHeader{
     height:187px;
     width:100%;
-    background-color:rgb(233, 204, 212);
+    background-color:rgba(212, 161, 176, 0.657);
     z-index:-2
 }
 
@@ -90,6 +90,70 @@ a{
    margin:20px;
    z-index:0
 }
+
+#sidebar{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top:-1300px;
+    right:60px;
+    z-index:2
+}
+#sidebar3{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    right:60px;
+    top:-310px;
+}
+
+
+.aleut{
+    height: 250px;
+    width: 300px;
+    background-color: rgb(151, 147, 147);
+    color:rgb(250, 245, 245);
+    border-radius: 60px;
+   margin-left: auto;
+   z-index:10;
+   position:relative;
+   bottom:3250px;
+    }
+
+#text{
+    word-wrap: break-word;
+    position: relative;
+    top:40px;
+    font-size: 20px;
+}
+
+
+.aboutContainer{
+    background-color: rgba(0, 0, 0, 0.061);
+    width:600px;
+    height:190px;
+    margin: auto;
+    position:relative;
+    top: 40px;
+    padding:10px;
+}
+#about{
+    font-family: roboto;
+    font-size:22px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .headerLinks{
     display:flex;
     justify-content: center;
@@ -101,18 +165,8 @@ a{
     padding: 15px
     
 }
-.thinLine{
-    background-color: gray;
-    width: 100%;
-height: 10px;
-}
-.thinLine{
-    background-color: gray;
-    width: 100%;
-height: 3px;
-position:relative;
-top:160px;
-}
+
+
 h1{
     font-family: roboto;
    align-items: center;
@@ -136,21 +190,7 @@ h1{
    padding: 40px;
 }
 
-#sidebar{
-    display: flex;
-    margin-left: auto;
-    position: relative;
-    top:-310px;
-    right:50px;
-    z-index:2
-}
-#sidebar3{
-    display: flex;
-    margin-left: auto;
-    position: relative;
-    right:50px;
-    top:-310px;
-}
+
 
 /* #sidebar2{
     display: flex;

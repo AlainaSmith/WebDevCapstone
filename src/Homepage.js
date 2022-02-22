@@ -45,9 +45,28 @@ return(
     </div>
    </div>
   </div> 
+<img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
 
-<div className='thinLine'></div>
-        <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
+<div className='aboutContainer'>
+<p id='about'>
+Aang-Waan! Welcome.
+</p>
+<p id='about'>
+What started out as a break from reality, became my ultimate muse.
+</p>
+<p id='about'> 
+It was through crafting and woodworking that brought me closer to my Indigenous roots. 
+</p>
+<p id='about'>
+I built Hopes & Trees for donating proceeds to preserve the historical signifance of my ancestors from Alaska, 
+</p>
+<p id='about'>
+and the future generations to come, thanks for visiting! 
+</p>
+</div>
+
+
+<PremadeBowls />
     
 
 {/* <PremadeBowls /> */}
@@ -90,7 +109,26 @@ return(
    
     <img id="sidebar3" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
     
-
+    <div className='aleut'>
+            <p id='text'>
+            Partial proceeds 
+            </p>
+            <p id='text'>
+            donated to preserving 
+            </p>
+            <p id='text'>
+            the history of Indigenous 
+            </p>
+            <p id='text'>
+            peoples from Unangax/Aleut regions of
+            </p> 
+            <p id='text'>
+            Alaska. 
+            </p>
+            <p id='text'>
+            Link below for specificities:
+            </p>
+</div>
     </div>
     )
 }

@@ -7,11 +7,11 @@ const PremadeBowls = () => {
     
     return(
        <div>
-        
-       
-
-        {/* <div><FaUserCircle/>New User/Login</div> */}
-            <div className='gallery'>
+        <div id='woodBowls' className='woodBowl2'>
+            <p>Wood bowls</p>
+            <div className='thinLine'></div>
+        </div>
+            <div className='gallery' id='bowls'>
   <figure class='gallery__item gallery__item--1'>
   <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/>
   </figure>
