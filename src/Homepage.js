@@ -35,16 +35,18 @@ return(
       <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
       <a id='two' href="#tinctures">Herbal Tinctures</a>
       <a id='three' href="#classes">Classes</a>
-      <div id='user'><FaUserCircle/></div>
-    </div>
-    <div className="cart">
+      <NavLink exact to='/userAccount'>
+      <FaUserCircle/>
+      </NavLink>
+      <NavLink exact to='/cart'>
         <Badge color="secondary">
-                <a href='/cart'></a>
           <ShoppingCartIcon />{" "}
         </Badge>
+      </NavLink>
     </div>
    </div>
   </div> 
+
 <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
 
 <div className='aboutContainer'>
@@ -96,13 +98,13 @@ and the future generations to come, thanks for visiting!
 
 
 
-{/* <div className="register" id='woodBowl'>
+<div className="register">
 <Register />
 <Login />
 <Top />
 </div>
 
-
+{/* 
 <Video /> */}
 
     <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
@@ -120,11 +122,8 @@ and the future generations to come, thanks for visiting!
             the history of Indigenous 
             </p>
             <p id='text'>
-            peoples from Unangax/Aleut regions of
+            peoples from Unangax/Aleut regions of Alaska
             </p> 
-            <p id='text'>
-            Alaska. 
-            </p>
             <p id='text'>
             Link below for specificities:
             </p>

@@ -6,7 +6,7 @@ import Homepage from './Homepage';
 import Cart from './Cart';
 import SmallWalnutBowl from './SmallWalnutBowl';
 import CustomBowl from './CustomWoodBowls';
-
+import UserAccount from './userAccount';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
          <Route path='/Cart' element={<Cart/>}/>
          <Route path='/SmallWalnutBowl' element={<SmallWalnutBowl/>}/>
          <Route path='/CustomWoodBowls' element={<CustomBowl/>}/>
-         
+         <Route path='/userAccount' element={<UserAccount/>}/>
          </Routes>
          </BrowserRouter>
         

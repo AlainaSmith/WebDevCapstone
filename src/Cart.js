@@ -14,7 +14,7 @@ const Cart = (props) => {
    
      Cart
       
-        <Subscribe />
+
 
         {/* <aside className='block col-1'>
             <h2> cart items</h2>

@@ -5,31 +5,34 @@ import './PremadeBowls.css'
 
 const PremadeBowls = () => {
     
-    return(
-       <div>
-        <div id='woodBowls' className='woodBowl2'>
-            <p>Wood bowls</p>
-            <div className='thinLine'></div>
-        </div>
-            <div className='gallery' id='bowls'>
-  <figure class='gallery__item gallery__item--1'>
-  <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/>
-  </figure>
-  <figure class="gallery__item gallery__item--2">
-    <img id="woodBowl"  src={require('./photos/IMG_7903.jpg')} class="gallery__img" alt="Image 2"/>
-  </figure>
-  <figure class="gallery__item gallery__item--3">
-  <img id="woodBowl"  src={require('./photos/IMG_7907.PNG')} class="gallery__img" alt="Image 3"/>
-  </figure>
-  <figure class="gallery__item gallery__item--4">
-  <img id="woodBowl"  src={require('./photos/FE7E9916-D897-4E65-8022-2001AFA3B22F (1).JPG')}class="gallery__img" alt="Image 4"/>
-  </figure>
-  <figure class="gallery__item gallery__item--5">
-  <img id="woodBowl"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/>
-  </figure>
-  <figure class="gallery__item gallery__item--6">
-  <img id="woodBowl"src={require('./photos/IMG_7909.jpg')} class="gallery__img" alt="Image 6"/>
-  </figure>
+return(
+<div>
+  <div id='woodBowls' className='woodBowl2'>
+      <p>Wood bowls</p>
+        <div className='thinLine'></div>
+  </div>
+  <div className='gallery' id='bowls'>
+
+    <figure class='gallery__item gallery__item--1'>
+  <NavLink exact to='/SmallWalnutBowl'>
+    <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/>
+    </NavLink>
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+        <img id="woodBowl"  src={require('./photos/IMG_7903.jpg')} class="gallery__img" alt="Image 2"/>
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+    <img id="woodBowl"  src={require('./photos/IMG_7907.PNG')} class="gallery__img" alt="Image 3"/>
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+    <img id="woodBowl"  src={require('./photos/FE7E9916-D897-4E65-8022-2001AFA3B22F (1).JPG')}class="gallery__img" alt="Image 4"/>
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+    <img id="woodBowl"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/>
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+    <img id="woodBowl"src={require('./photos/IMG_7909.jpg')} class="gallery__img" alt="Image 6"/>
+    </figure>
 </div>
         </div>
     )
@@ -129,3 +132,12 @@ export default PremadeBowls
     </div>
 </form>
 </div> */}
+
+
+
+{/* <div className='gallery' id='bowls'>
+  <NavLink exact to='/SmallWalnutBowl'>
+    <figure class='gallery__item gallery__item--1'>
+    <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/>
+    </figure>
+    </NavLink> */}
