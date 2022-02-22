@@ -14,7 +14,16 @@
   
 }
 
-
+.Account{
+    background-color: blue;
+}
+.user{
+    position:relative;
+    top:80px;
+    left: 450px;
+    font-family: roboto;
+    font-size:20px
+}
 .wrapper {
     max-width: 100%;
     overflow: hidden;
@@ -64,26 +73,58 @@ margin-right: 30px
 
 }
 
-#user{
+#userHeader{
     position:relative;
-    top:10px;
+    top:-4px;
     height: 30px;
     width:30px;
+    color:white;
+    left:600px
+}
+#userHeader:hover{
+    color:rgb(107, 95, 95)
+}
+.user{
+    background: rgb(185, 181, 173);
+    border-radius: 20px;
+    width: 90px;
+    height:20px;
+    padding:10px
 }
 
 .cart{
     margin-top: 64px;
     margin-left:160px
 }
-a{
+#one{
   background-color: rgb(114, 170, 163);  
   color:white;
   box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
   padding:10px;
   z-index:5
   }
+  #two{
+    background-color: rgb(114, 170, 163);  
+    color:white;
+    box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
+    padding:10px;
+    z-index:5
+    }
+    #three{
+        background-color: rgb(114, 170, 163);  
+        color:white;
+        box-shadow: 2px 2px 2px 2px rgb(128, 117, 117);
+        padding:10px;
+        z-index:5
+        }
 
+ #userAccountIcon{
+      color: black;
+}
 
+#cart{
+    color:black
+}
 #logo{
     display:flex;
    position:absolute;

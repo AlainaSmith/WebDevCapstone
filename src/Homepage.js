@@ -14,13 +14,22 @@ import Classes from './Classes';
 import {FaUserCircle} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-
+import Jewelry from './Jewelry';
 const Homepage = () => {
 const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+const userfirstName = window.localStorage.getItem('userfirstName')
+ console.log(userfirstName)
 
 return(
  <div>
   <div className='pinkHeader'>
+
+                  <NavLink id='userHeader' exact to='/Welcome'>
+                  
+                <p className='user'>Hi, {userfirstName}!</p>
+               
+                </NavLink>
+          
    <div className='wrapper'>
    <h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
    </div>
@@ -29,10 +38,10 @@ return(
       <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
       <a id='two' href="#tinctures">Herbal Tinctures</a>
       <a id='three' href="#classes">Classes</a>
-      <NavLink exact to='/userAccount'>
+      <NavLink id='userAccountIcon' exact to='/userAccount'>
       <FaUserCircle/>
       </NavLink>
-      <NavLink exact to='/cart'>
+      <NavLink id='cart' exact to='/cart'>
         <Badge color="secondary">
           <ShoppingCartIcon />{" "}
         </Badge>
@@ -66,43 +75,25 @@ and the future generations to come, thanks for visiting!
 
 
 <PremadeBowls />
-    
-
-{/* <PremadeBowls /> */}
-{/* <div id="options">
-  <div className='option1'>
-        <h3>Custom Woodwork</h3>
-        
-
-</div>
-
-<div className='option2'>
-        <h3>Herbal Tinctures</h3>
-        
- </div>
+<Jewelry />
+<HerbalTinctures />
+<Video />
 
 
-<div className='option3'>
-        <h3>Classes</h3></div>
-</div> */}
+
         {/* <img className="pic" src="https://images.unsplash.com/photo-1567080586917-e6ab6aa0df85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bHVtYmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
          */}
 
         
-        
-        {/* <div className="columnBar"></div> */}
-        
 
 
 
-<div className="register">
-<Register />
-<Login />
+{/* <div className="register">
+</div> */}
 <Top />
-</div>
 
-{/* 
-<Video /> */}
+
+
 
     <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
    

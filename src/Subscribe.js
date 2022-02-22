@@ -8,16 +8,16 @@ const Subscribe = () => {
     const [lastName, setLastName] = useState('')
     const [email_address, setEmailAddress] = useState('')
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log('submitted')
-        axios.post('http://localstorage:3500', {
-        firstName: firstName, 
-        lastName: lastName,
-        email_address: email_address
-    })
-    .then((res) =>{ console.log(res) })
-}
+//     const handleSubmit = (e) => {
+//         e.preventDefault()
+//         console.log('submitted')
+//         axios.post('http://localstorage:3500', {
+//         firstName: firstName, 
+//         lastName: lastName,
+//         email_address: email_address
+//     })
+//     .then((res) =>{ console.log(res) })
+// }
 
     return(
         <div>

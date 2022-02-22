@@ -70,7 +70,8 @@ app.post('/login', async (req, res) => {
   console.log(validUser)
     if (bcrypt.compareSync(password, validUser[0][0].password)) {
       let object = {
-        id: validUser[0][0].id,
+        firstName: validUser[0][0].firstname,
+        id: validUser[0][0].user_id,
         email_address: validUser[0][0].email_address
       }
       res.status(200).send(object)

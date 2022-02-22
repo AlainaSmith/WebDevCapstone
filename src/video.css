@@ -16,9 +16,9 @@ EDIT ON
   height: 200px;
   width: 2526px;
   /* background: url(https://player.vimeo.com/video/679806687?h=6d0493bf10&autoplay=1&loop=1&title=0&byline=0&portrait=0); */
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   height: 100%;
   transform: translate3d(0, 0, 0);
 }
@@ -38,16 +38,21 @@ EDIT ON
 .tech-slideshow #two {
     animation: moveSlideshow 12s linear infinite;
     position:relative;
-    top:1300px;
+    top:300px;
     right:400px;
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
   }
 
   .tech-slideshow #one {
     animation: moveSlideshow 12s linear infinite;
     position:relative;
-      top:1300px;
+      top:300px;
       right:400px;
+      height:300px;
+      background-color: rgba(148, 120, 120, 0.43);
   }
+
 
 /* .tech-slideshow:hover #two {
   opacity: 1;
