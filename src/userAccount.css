@@ -1,0 +1,12 @@
+#placement{
+   position: relative;
+   top:-900px;
+}
+
+.infoForm{
+    height: 100px;
+    width: 400px;
+    margin:auto;
+    position: relative;
+    top: 40px;
+}

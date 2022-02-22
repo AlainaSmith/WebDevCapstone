@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Login from "./Login";
-import Register from "./Register";
-import Header from "./Header";
-import Subscribe from "./Subscribe";
-import Header2 from "./Header2";
+import './Homepage.css'
+import {FaUserCircle} from 'react-icons/fa'
+import Badge from "@material-ui/core/Badge";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Welcome from "./Welcome";
+
 const Cart = (props) => {
     // const {cartItems, onAdd, onRemove} = props
     // const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
@@ -12,8 +13,28 @@ const Cart = (props) => {
     return(
         <div>
    
-     Cart
-      
+   <div className='pinkHeader'>
+   <h2>Cart</h2>
+  <div className='greyHeader'>
+    <div id='options'>
+      <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
+      <a id='two' href="#tinctures">Herbal Tinctures</a>
+      <a id='three' href="#classes">Classes</a>
+      <NavLink exact to='/userAccount'>
+      <FaUserCircle/>
+      </NavLink>
+      <NavLink exact to='/cart'>
+        <Badge color="secondary">
+          <ShoppingCartIcon />{" "}
+        </Badge>
+      </NavLink>
+    </div>
+   </div>
+  </div> 
+
+<NavLink exact to='/Homepage'>
+<img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
+</NavLink>
 
 
         {/* <aside className='block col-1'>

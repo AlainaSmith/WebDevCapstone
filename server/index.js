@@ -109,4 +109,15 @@ app.post('/SmallWalnutBowl', async(req,res) => {
 })
 
 
+app.get('/welcome', async(req,res) => {
+  const {firstName} = req.body
+  const loginUser = await sequelize.query(`
+    SELECT * FROM users WHERE 
+    firstName = '${firstName}' 
+  `).catch((err) => console.log(err))
+})
+
+
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -7,7 +7,10 @@ import Cart from './Cart';
 import SmallWalnutBowl from './SmallWalnutBowl';
 import CustomBowl from './CustomWoodBowls';
 import UserAccount from './userAccount';
-
+import Login from './Login';
+import Welcome from './Welcome';
+import Register from './Register';
+import Classes from './Classes';
 const App = () => {
   return (
     <div className="App">
@@ -21,6 +24,10 @@ const App = () => {
          <Route path='/SmallWalnutBowl' element={<SmallWalnutBowl/>}/>
          <Route path='/CustomWoodBowls' element={<CustomBowl/>}/>
          <Route path='/userAccount' element={<UserAccount/>}/>
+         <Route path='/Welcome' element={<Welcome/>}/>
+         <Route path='/Login' element={<Login/>}/>
+         <Route path='/Register' element={<Register/>}/>
+         <Route path='/Classes' element={<Classes/>}/>
          </Routes>
          </BrowserRouter>
         

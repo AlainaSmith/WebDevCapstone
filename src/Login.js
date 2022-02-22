@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-
+import { NavLink } from "react-router-dom";
 import axios from "axios"
 import './Login.css'
 
@@ -8,7 +8,15 @@ const Login = () => {
 const [emailAddress, setEmailAddress] = useState('')
 const [password, setPassword] = useState('')
 const [loginStatus, setLoginStatus] = useState('')
+const [firstName, setFirstName] = useState('')
 
+const handleLogin = (e) => {
+  e.preventDefault()
+    axios.post('http://localhost:3500/welcome', {
+       firstName: firstName
+    })
+    .then((res)=>{console.log(res.data)})
+  }
 
 const handleSubmit = (e) => {
   e.preventDefault()
@@ -43,6 +51,10 @@ return(
         onChange={(e)=>{setPassword(e.target.value)}}
       />
       <button type="button" onClick={handleSubmit}>Login</button>
+      <button type='button' onClick={handleLogin}>View Profile</button>
+      <NavLink exact to='/Welcome'>
+      <button type='button'>Alaina Profile</button>
+      </NavLink>
       </div>
     </form>
    

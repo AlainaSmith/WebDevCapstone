@@ -1,19 +1,19 @@
 import React from "react";
-import Login from "./Login";
-import Register from "./Register";
-import Welcome from "./Welcome";
 import {FaUserCircle} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { NavLink } from "react-router-dom";
-import './userAccount.css'
 
-const UserAccount = () => {
+
+const Welcome = () => {
+
+
+ 
 
     return(
         <div>
-             <div className='pinkHeader'>
-   <h2>Sign up or Login</h2>
+           
+            <div className='pinkHeader'>
   <div className='greyHeader'>
     <div id='options'>
       <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
@@ -30,21 +30,14 @@ const UserAccount = () => {
     </div>
    </div>
   </div> 
-  <NavLink exact to='/Homepage'>
+
+<NavLink exact to='/Homepage'>
 <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
 </NavLink>
-
-<div className='infoForm'>
-  <h3>Login or Create an account to sign up for classes, redeem rewards, keep track of purchases and where your proceeds will go!</h3>
-  </div>
-
-<div id='placement' className="register">
-<Register />
-<Login />
-</div>
+<h1> Welcome Back, Alaina!</h1>
+            <h2>Rewards</h2>
         </div>
-        
     )
 }
 
-export default UserAccount
+export default Welcome

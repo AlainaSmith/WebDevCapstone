@@ -3,13 +3,7 @@ import './Homepage.css'
 import Header2 from './Header2'
 import { NavLink } from "react-router-dom";
 import Video from './Video';
-
 import HerbalTinctures from './Herbal';
-
-// import Aleut from './Aleut';
-// import Main from './Main';
-// import Cart from './Cart';
-// import data from './data';
 import AddCart from './AddCart';
 import PremadeBowls from './PremadeBowls';
 import Register from './Register';
@@ -42,6 +36,9 @@ return(
         <Badge color="secondary">
           <ShoppingCartIcon />{" "}
         </Badge>
+      </NavLink>
+      <NavLink exact to='/Classes'>
+              Classes Demo
       </NavLink>
     </div>
    </div>

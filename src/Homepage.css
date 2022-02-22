@@ -95,7 +95,7 @@ a{
     display: flex;
     margin-left: auto;
     position: relative;
-    top:-1300px;
+    top:-2200px;
     right:60px;
     z-index:2
 }
@@ -117,7 +117,7 @@ a{
    margin-left: auto;
    z-index:10;
    position:relative;
-   bottom:3250px;
+   bottom:4150px;
     }
 
 #text{

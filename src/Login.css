@@ -96,7 +96,7 @@ input:focus{
 label {
     font-size:15px;
     font-weight:500;
-    color:orange;
+    color:rgb(8, 8, 8);
 }
 
 .radio-btn input{
