@@ -77,6 +77,14 @@
   font-size: 30px;
   font-weight: 300;
 }
+
+#tincturesPhoto{
+  position:relative;
+  top:170px;
+  right:500px;
+  height:150px;
+  width:150px;
+}
 #woodBowls{
   display:flex;
   margin-left: auto;

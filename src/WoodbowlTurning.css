@@ -1,0 +1,32 @@
+#dates{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(110, 112, 110);
+    height: 400px;
+    width:800px;
+    margin:auto;
+    position:relative;
+    top:100px;
+}
+
+.classBooking{
+    
+    color:rgb(56, 54, 54);
+    background:rgb(136, 158, 167);
+    height:300px;
+    width:300px;
+    margin-right: auto;
+    border-radius:30px;
+    margin:20px
+}
+
+ input{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+   position: relative;
+   left:220px;
+   bottom:15px
+} 
+

@@ -11,6 +11,7 @@ import Login from './Login';
 import Welcome from './Welcome';
 import Register from './Register';
 import Classes from './Classes';
+import WoodbowlTurning from './WoodbowlTurning';
 const App = () => {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ const App = () => {
          <Route path='/Login' element={<Login/>}/>
          <Route path='/Register' element={<Register/>}/>
          <Route path='/Classes' element={<Classes/>}/>
+         <Route path='/WoodbowlTurning' element={<WoodbowlTurning/>}/>
          </Routes>
          </BrowserRouter>
         

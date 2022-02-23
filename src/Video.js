@@ -1,6 +1,8 @@
 import React from "react";
 import './video.css'
 import './PremadeBowls'
+import { NavLink } from "react-router-dom";
+
 const Video = () => {
   return (
     <div>
@@ -9,7 +11,9 @@ const Video = () => {
         <div className='thinLine'></div>
   </div>
 
+  <NavLink exact to='/WoodbowlTurning'>
 <p>Wood Bowl Turning</p>
+</NavLink>
 <p>Herbal Tincture Making</p>
       
         <div class="tech-slideshow">
