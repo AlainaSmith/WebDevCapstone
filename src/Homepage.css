@@ -136,7 +136,7 @@ margin-right: 30px
     display: flex;
     margin-left: auto;
     position: relative;
-    top:-2200px;
+    top:-3500px;
     right:60px;
     z-index:2
 }
@@ -145,42 +145,74 @@ margin-right: 30px
     margin-left: auto;
     position: relative;
     right:60px;
-    top:-310px;
+    top:-3510px;
 }
 
 
 .aleut{
-    height: 250px;
-    width: 300px;
-    background-color: rgb(151, 147, 147);
-    color:rgb(250, 245, 245);
-    border-radius: 60px;
+    height: 180px;
+    width: 280px;
+    background-color: rgba(139, 128, 128, 0.45);
+    color:rgb(0, 0, 0);
+    border-radius: 90px;
    margin-left: auto;
-   z-index:10;
+   z-index:12;
    position:relative;
-   bottom:4150px;
+   right:30px;
+   bottom:5280px;
+   box-shadow: 3px 3px rgba(0, 0, 0, 0.553);
+
     }
 
+    /* .aleut{
+        height: 250px;
+        width: 300px;
+        background-color: rgba(139, 128, 128, 0.45);
+        color:rgb(3, 3, 3);
+        border-radius: 60px;
+       margin-left: auto;
+       z-index:12;
+       position:relative;
+       bottom:5620px;
+       box-shadow: 3px 3px rgba(0, 0, 0, 0.553);
+    
+        } */
+
+#mapalaska{
+    height: 250px;
+    width: 330px;
+    position:relative;
+    bottom:5050px;
+    left: 500px;
+    z-index:11
+}
 #text{
     word-wrap: break-word;
     position: relative;
-    top:40px;
+    top:20px;
     font-size: 20px;
 }
 
-
+.greeting{
+    position: relative;
+    top: 40px;
+    font-size:25px;
+}
 .aboutContainer{
     background-color: rgba(0, 0, 0, 0.061);
-    width:600px;
-    height:190px;
+    width:800px;
+    height:120px;
     margin: auto;
     position:relative;
-    top: 40px;
-    padding:10px;
+    top: 70px;
+    padding:20px;
+    font-size:22px;
+    line-height: 30px;
+    border-radius: 7px;
 }
 #about{
     font-family: roboto;
-    font-size:22px;
+    
 
 }
 

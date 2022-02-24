@@ -13,7 +13,7 @@ const HerbalTinctures= () => {
   </div>
 
         <a href="#tinctures" id='option2'>Herbal Tinctures</a>
-        <NavLink exact to='/SmallWalnutBowl'>
+        <NavLink exact to='/Joe'>
     <img id="tincturesPhoto" src={require('./photos/IMG_0416.jpg')} />
     </NavLink>
     

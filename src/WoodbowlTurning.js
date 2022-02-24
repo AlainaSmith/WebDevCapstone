@@ -39,14 +39,29 @@ return(
 
 <p>Dates & Times</p>
 <form className='classBooking'>
-March 4, 2022<input type = "radio" name = "phone" value ="bowl"/>
-March 21, 2022<input type = "radio" name = "phone" value ="bowl"/>
-March 4, 2022<input type = "radio" name = "phone" value ="bowl"/>
-March 21, 2022<input type = "radio" name = "phone" value ="bowl"/>
+March 4, 2022<input className='radio'type = "radio" name = "phone" value ="bowl"/>
+March 21, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
+March 4, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
+March 21, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
 <button>Add to Cart</button>
 </form>
 </div>
 
+<div className='description'>
+<p>
+Description: This is a great class to advance your skills to bowl turning. 
+The course is designed for the beginner to intermediate turner who wants to get a good foundation in turning bowls. 
+Proper tools, blank selection, chucking methods, and form will be covered. Students will leave with their own finished bowl.
+</p>
+Tuition: $80.00
+<p>
+What to bring:
+</p>
+
+<p>
+Additional Notes:
+</p>
+</div>
 
 
         </div>

@@ -55,10 +55,10 @@ return(
 
 <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
 
-<div className='aboutContainer'>
-<p id='about'>
+<p id='about' className='greeting'>
 Aang-Waan! Welcome.
 </p>
+<div className='aboutContainer'>
 <p id='about'>
 What started out as a break from reality, became my ultimate muse.
 </p>
@@ -67,8 +67,6 @@ It was through crafting and woodworking that brought me closer to my Indigenous 
 </p>
 <p id='about'>
 I built Hopes & Trees for donating proceeds to preserve the historical signifance of my ancestors from Alaska, 
-</p>
-<p id='about'>
 and the future generations to come, thanks for visiting! 
 </p>
 </div>
@@ -99,7 +97,9 @@ and the future generations to come, thanks for visiting!
    
     <img id="sidebar3" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
     
+    <img id="mapalaska"  src={require('./photos/mapalaska.png')}/>
     <div className='aleut'>
+    
             <p id='text'>
             Partial proceeds 
             </p>

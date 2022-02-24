@@ -12,6 +12,8 @@ import Welcome from './Welcome';
 import Register from './Register';
 import Classes from './Classes';
 import WoodbowlTurning from './WoodbowlTurning';
+import HerbalTinctures from './Herbal';
+import Joe from './Joe';
 const App = () => {
   return (
     <div className="App">
@@ -30,6 +32,8 @@ const App = () => {
          <Route path='/Register' element={<Register/>}/>
          <Route path='/Classes' element={<Classes/>}/>
          <Route path='/WoodbowlTurning' element={<WoodbowlTurning/>}/>
+         <Route path='/Herbal' element={<HerbalTinctures/>}/>
+         <Route path='/Joe' element={<Joe/>}/>
          </Routes>
          </BrowserRouter>
         

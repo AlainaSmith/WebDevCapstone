@@ -31,7 +31,7 @@ const UserAccount = () => {
    </div>
   </div> 
   <NavLink exact to='/Homepage'>
-<img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
+  <img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
 
 <div className='infoForm'>

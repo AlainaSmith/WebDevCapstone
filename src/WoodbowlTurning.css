@@ -2,12 +2,13 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(110, 112, 110);
+    background-color: rgba(110, 112, 110, 0.566);
     height: 400px;
     width:800px;
     margin:auto;
     position:relative;
     top:100px;
+    z-index:-1
 }
 
 .classBooking{
@@ -18,15 +19,30 @@
     width:300px;
     margin-right: auto;
     border-radius:30px;
-    margin:20px
+    margin:20px;
+  
+
 }
 
- input{
+ .radio{
     display:flex;
     justify-content: center;
     flex-direction: column;
    position: relative;
    left:220px;
-   bottom:15px
+   bottom:15px;
+   z-index:2
 } 
 
+.description{
+    color:rgb(56, 54, 54);
+    background:rgb(249, 250, 250);
+    height:300px;
+    width:400px;
+   margin:auto;
+    border-radius:30px;
+    z-index:1;
+    position:relative;
+    bottom: 241px;
+    left: 150px;
+}

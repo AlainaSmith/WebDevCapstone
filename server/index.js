@@ -21,8 +21,10 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 //Middleware
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.resolve(__HopesAndTreesTwo, "../build")))
 
 //Put endpoints here
+
 
 app.post('/seed', seed) 
 console.log(seed)
@@ -119,6 +121,8 @@ app.get('/welcome', async(req,res) => {
 })
 
 
-
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../build', 'index.html'))
+})
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

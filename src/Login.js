@@ -10,6 +10,7 @@ const [password, setPassword] = useState('')
 const [loginStatus, setLoginStatus] = useState('')
 const [firstName, setFirstName] = useState('')
 let navigate = useNavigate();
+const [errorMessage, setErrorMessage] = useState('');
 
 // const handleLogin = (e) => {
 //   e.preventDefault()
@@ -26,6 +27,7 @@ const handleSubmit = (e) => {
         password: password
     })
     .then((res)=>{
+      // setErrorMessage('Example error message!');
       window.localStorage.setItem('userfirstName', res.data.firstName)
       navigate(`/Welcome`);
     })
@@ -65,6 +67,9 @@ return(
         onChange={(e)=>{setPassword(e.target.value)}}
       />
       <button type="button" onClick={handleSubmit}>Login</button>
+      {/* {errorMessage && (
+  <p className="error"> {errorMessage} </p>
+)} */}
       {/* <button type='button' onClick={handleLogin}>View Profile</button> */}
       <NavLink exact to='/Welcome'>
       <button type='button'>Alaina Profile</button>
