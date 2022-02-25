@@ -25,8 +25,34 @@ seed: (req, res) => {
             firstName VARCHAR(50),
             lastName varchar(50),
             email_address VARCHAR(100),
-            password VARCHAR(100)
+            password VARCHAR(100),
+            rewards VARCHAR(100),
+            classes VARCHAR(100),
+            purchases VARCHAR(500)
         );
+     
+        CREATE TABLE welcomeUser(
+            welcomeUser_id SERIAL PRIMARY KEY,
+            reward_status VARCHAR(100),
+            classes VARCHAR(500),
+            purchases VARCHAR(500),
+            proceeds VARCHAR(100)
+        );
+        
+
+        CREATE TABLE subscribe(
+            subscribe_id SERIAL PRIMARY KEY,
+            firstName VARCHAR(100),
+            lastName VARCHAR(100),
+            email_address VARCHAR(100) 
+        );
+
+        INSERT INTO users 
+        (firstName, lastName, email_address)
+        VALUES ('${firstName}', '${lastName}', '${email_address}');
+
+
+
 
         INSERT INTO users 
         (firstName, lastName, email_address, password)
@@ -79,7 +105,7 @@ seed: (req, res) => {
             price VARCHAR(100) NOT NULL
             );
 
-            INSERT INTO herbal_tinctures(size, tincutre_choice, price),
+            INSERT INTO herbal_tinctures(size, tincture_choice, price),
             VALUES 
             (2oz, Dandelion, 12), 
             (2oz, Licorice, 12),
@@ -112,16 +138,11 @@ seed: (req, res) => {
             
           
 
-        CREATE TABLE userSub(
-            userSub_id SERIAL PRIMARY KEY,
-            firstName VARCHAR(100),
-            lastName VARCHAR(100),
-            email_address VARCHAR(100) 
-        );
+        
 
-        INSERT INTO users 
-        (firstName, lastName, email_address)
-        VALUES ('${firstName}', '${lastName}', '${email_address}');
+       
+
+     
 
 
     `).then(() => {

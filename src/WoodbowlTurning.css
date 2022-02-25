@@ -20,8 +20,6 @@
     margin-right: auto;
     border-radius:30px;
     margin:20px;
-  
-
 }
 
  .radio{
@@ -31,7 +29,7 @@
    position: relative;
    left:220px;
    bottom:15px;
-   z-index:2
+   z-index:10
 } 
 
 .description{
@@ -46,3 +44,4 @@
     bottom: 241px;
     left: 150px;
 }
+

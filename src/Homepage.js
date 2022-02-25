@@ -34,6 +34,7 @@ return(
    <h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
    </div>
   <div className='greyHeader'>
+  
     <div id='options'>
       <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
       <a id='two' href="#tinctures">Herbal Tinctures</a>
@@ -46,9 +47,9 @@ return(
           <ShoppingCartIcon />{" "}
         </Badge>
       </NavLink>
-      <NavLink exact to='/Classes'>
+      {/* <NavLink exact to='/Classes'>
               Classes Demo
-      </NavLink>
+      </NavLink> */}
     </div>
    </div>
   </div> 
@@ -93,11 +94,11 @@ and the future generations to come, thanks for visiting!
 
 
 
-    <img id="sidebar" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
+    <img id="sidebar" height="900px" width="100px" src={require('./photos/wood.png')} />
    
     <img id="sidebar3" height="1200px" width="150px" src={require('./photos/sidebar.png')} />
     
-    <img id="mapalaska"  src={require('./photos/mapalaska.png')}/>
+    {/* <img id="mapalaska"  src={require('./photos/mapalaska.png')}/>
     <div className='aleut'>
     
             <p id='text'>
@@ -115,7 +116,7 @@ and the future generations to come, thanks for visiting!
             <p id='text'>
             Link below for specificities:
             </p>
-</div>
+</div> */}
     </div>
     )
 }

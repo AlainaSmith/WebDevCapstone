@@ -9,6 +9,9 @@ const [emailAddress, setEmailAddress] = useState('')
 const [password, setPassword] = useState('')
 const [loginStatus, setLoginStatus] = useState('')
 const [firstName, setFirstName] = useState('')
+const [rewards, setRewards] = useState('')
+const [classes, setClasses] = useState('')
+const [purchases, setPurchases] = useState('')
 let navigate = useNavigate();
 const [errorMessage, setErrorMessage] = useState('');
 
@@ -29,6 +32,9 @@ const handleSubmit = (e) => {
     .then((res)=>{
       // setErrorMessage('Example error message!');
       window.localStorage.setItem('userfirstName', res.data.firstName)
+      window.localStorage.setItem('infoRewards', res.data.rewards)
+      window.localStorage.setItem('infoClasses', res.data.classes)
+      window.localStorage.setItem('infoPurchases', res.data.purchases)
       navigate(`/Welcome`);
     })
  

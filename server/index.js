@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const path = require('path');
 const PORT = process.env.PORT || 3500 ;
 const Sequelize = require('sequelize')
 // const {connect} = require('testConnection')
@@ -21,7 +22,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 //Middleware
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.resolve(__HopesAndTreesTwo, "../build")))
+app.use(express.static(path.resolve(__dirname, "../build")))
 
 //Put endpoints here
 
@@ -74,7 +75,10 @@ app.post('/login', async (req, res) => {
       let object = {
         firstName: validUser[0][0].firstname,
         id: validUser[0][0].user_id,
-        email_address: validUser[0][0].email_address
+        email_address: validUser[0][0].email_address,
+        rewards: validUser[0][0].rewards,
+        classes: validUser[0][0].classes,
+        purchases: validUser[0][0].purchases,
       }
       res.status(200).send(object)
    
@@ -119,6 +123,31 @@ app.get('/welcome', async(req,res) => {
     firstName = '${firstName}' 
   `).catch((err) => console.log(err))
 })
+
+app.get('/welcome', async(req,res) => {
+  const {rewards} = req.body
+  const loginUser = await sequelize.query(`
+    SELECT * FROM users WHERE 
+    rewards = '${rewards}' 
+  `).catch((err) => console.log(err))
+})
+
+app.get('/welcome', async(req,res) => {
+  const {classes} = req.body
+  const loginUser = await sequelize.query(`
+    SELECT * FROM users WHERE 
+    classes = '${classes}' 
+  `).catch((err) => console.log(err))
+})
+
+app.get('/welcome', async(req,res) => {
+  const {purchases} = req.body
+  const loginUser = await sequelize.query(`
+    SELECT * FROM users WHERE 
+    purchases = '${purchases}' 
+  `).catch((err) => console.log(err))
+})
+
 
 
 app.get('/*', function (req, res) {

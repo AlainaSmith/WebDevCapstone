@@ -53,8 +53,9 @@ Classes Demo
 </div>
 </div> 
 
+<NavLink exact to='/Homepage'>
 <img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
-      
+</NavLink>
             <h1>Walnut Bowl</h1>
             <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7910.PNG')} />
             <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7914.PNG')} />

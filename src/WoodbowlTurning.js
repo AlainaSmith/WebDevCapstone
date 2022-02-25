@@ -12,23 +12,35 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 return(
 <div>
 <div className='pinkHeader'>
-<h2>Wood Bowl Turning</h2>
-  <div className='greyHeader'>
-    <div id='options'>
-      <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
-      <a id='two' href="#tinctures">Herbal Tinctures</a>
-      <a id='three' href="#classes">Classes</a>
-      <NavLink exact to='/userAccount'>
-      <FaUserCircle/>
-      </NavLink>
-      <NavLink exact to='/cart'>
-        <Badge color="secondary">
-          <ShoppingCartIcon />{" "}
-        </Badge>
-      </NavLink>
-    </div>
-   </div>
-  </div> 
+
+<NavLink id='userHeader' exact to='/Welcome'>
+
+<p className='user'>Hi, {userfirstName}!</p>
+
+</NavLink>
+
+<div className='wrapper'>
+<h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
+</div>
+<div className='greyHeader'>
+<div id='options'>
+<a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
+<a id='two' href="#tinctures">Herbal Tinctures</a>
+<a id='three' href="#classes">Classes</a>
+<NavLink id='userAccountIcon' exact to='/userAccount'>
+<FaUserCircle/>
+</NavLink>
+<NavLink id='cart' exact to='/cart'>
+<Badge color="secondary">
+<ShoppingCartIcon />{" "}
+</Badge>
+</NavLink>
+<NavLink exact to='/Classes'>
+Classes Demo
+</NavLink>
+</div>
+</div>
+</div> 
 
 <NavLink exact to='/Homepage'>
 <img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
@@ -36,7 +48,6 @@ return(
 
 
 <div id='dates'>
-
 <p>Dates & Times</p>
 <form className='classBooking'>
 March 4, 2022<input className='radio'type = "radio" name = "phone" value ="bowl"/>

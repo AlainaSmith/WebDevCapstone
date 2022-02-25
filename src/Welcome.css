@@ -1,0 +1,38 @@
+#welcome{
+    font-family: roboto;
+   align-items: center;
+   text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                10px 20px 5px rgba(0,0,0,0.05),
+                -10px 20px 5px rgba(0,0,0,0.05);
+    font-size: 29px;
+   position: relative;
+   top:45px;
+}
+
+.rewards{
+    color:rgb(56, 54, 54);
+    background:rgb(213, 216, 216);
+    height:300px;
+    width:700px;
+    margin-right: auto;
+    border-radius:30px;
+    margin:30px;
+}
+#text{
+position:relative;
+right:180px;
+}
+#points{
+position:relative;
+left:140px;
+bottom:100px;
+}
+/* 
+#sidebar{
+    display: flex;
+   
+}
+#sidebar3{
+    display: flex;
+   
+} */

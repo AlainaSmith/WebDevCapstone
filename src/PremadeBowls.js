@@ -55,7 +55,7 @@ return(
     <img id="woodBowl6"src={require('./photos/first.JPG')} class="gallery__img" alt="Image 6"/>
     </figure>
 
-<div className='backPhoto7'><p id='Walnut'>Walnut</p></div>
+<div className='backPhoto7'><p id='Walnut'>Red Cedar</p></div>
     <figure class="gallery__item gallery__item--7">
     <img id="woodBowl7"src={require('./photos/FE7E9916-D897-4E65-8022-2001AFA3B22F (1).JPG')} class="gallery__img" alt="Image 7"/>
     </figure>
