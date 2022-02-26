@@ -1,0 +1,202 @@
+
+  .user{
+
+}
+
+#userHeader{
+}
+
+
+.backgroundContainer{
+    height:5000px;
+    width:180.6vh;
+    background-color: rgba(139, 128, 145, 0.801);
+    
+}
+.backgroundPhoto{
+    display:flex;
+    justify-content: center;
+  
+  
+}
+#back{
+    margin:20px;
+    border-radius:20px;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.438);
+}
+
+.options{
+  color:black
+}
+
+#woodbowl{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+#jewelry{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+
+#herbalTinctures{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+
+#classesId{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+#logo{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+   top:180px;
+   
+}
+#greet{
+    position:relative;
+    bottom: 750px;
+  line-height: 1.5;
+    font-size: 26px;
+    font-family: roboto;
+}
+
+#aboutContainer{
+    padding:17px;
+    height: 120px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.212);
+    position: relative;
+    bottom: 580px;
+    margin:auto;
+    color:rgb(255, 255, 255);
+    border-radius:20px;
+}
+#aboutText{
+    line-height:1.5;
+    font-size: 20px;
+}
+
+#gradText{
+    color:white;
+    position:relative;
+    bottom:510px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif
+}
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .marquee {
+    white-space: wrap;
+    overflow: hidden;
+    display: inline-block;
+    padding-left:50%;
+    margin-top:30px;
+    animation: marquee 16s linear infinite;
+    
+  }
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+
+
+  .gradientBars{
+height: 50px;
+width: 1065px;
+
+  }
+
+  #one{
+    background-color: rgba(42, 73, 61, 0.493);
+    position:relative;
+    bottom:430px;
+    left:170px;
+  }
+
+  #two{
+    background-color: rgba(54, 83, 72, 0.877);
+    position:relative;
+    bottom:435px;
+    left:170px;
+  }
+
+  #three{
+    background-color: rgb(103, 126, 117);
+    position:relative;
+    bottom:447px;
+    left:170px;
+  }
+
+  #woodbowlLocator{
+    height:100px;
+    position:relative;
+    bottom:445px;
+    left:170px;
+    background-color:rgb(88, 38, 38);
+  }
+  #jewelryLocator{
+    height:100px;
+    position:relative;
+    bottom:-206px;
+    left:170px;
+    background-color:rgb(88, 38, 38);
+  }
+  /* #four{
+    background-color: rgb(107, 124, 118);
+    position:relative;
+    bottom:447px;
+    left:170px;
+    width:1085px
+  } */
+
+  .whiteContainer{
+      height: 3000px;
+      width: 1085px;
+      background: rgb(255, 231, 231);
+      position: relative;
+      bottom:3615px;
+      margin:auto
+  }
+
+  #fixed{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index:20
+  }
+
+  .greyHeader{
+    height:70px;
+    width:100%;
+    background-color: rgba(160, 150, 150, 0.431);
+    /* position:absolute;
+    top:117px; */
+  }
+
+ 

@@ -69,3 +69,36 @@ const Cart = (props) => {
 
 export default Cart
 
+// import ItemCard
+
+// const Cart({udpate})
+// const [data, setData] = useState([])
+// let currentUser = 1
+
+// const getData = () => {
+//   axios.get(`http://localhost:3500/api/userCart/${currentUser}`)
+//   .then((res) => {
+//     // console.log(res.data)
+//     setData(res.data)
+//   })
+// }
+
+// const removeItem = (id) => {
+// axios.delete(`http://localhost:3500/api/userCart/${id}`)
+// // console.log(res.data)
+// getData()
+// )
+// }
+
+// useEffect(() => {
+//   getData()
+// }, [])
+
+// return(
+//   <div className='page-container'>
+//     <h2>My Cart</h2>
+//     {data.map((element, index) => {
+//       return <ItemCard data={element} key={index} />
+//     })}
+//   </div>
+// )

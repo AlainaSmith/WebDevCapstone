@@ -1,5 +1,5 @@
 import React from "react";
-import './header2.css'
+
 import { NavLink } from "react-router-dom";
 import {FaUserCircle} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";

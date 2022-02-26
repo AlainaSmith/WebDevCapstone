@@ -14,14 +14,18 @@ import Classes from './Classes';
 import WoodbowlTurning from './WoodbowlTurning';
 import HerbalTinctures from './Herbal';
 import Joe from './Joe';
+import Homepage2 from './Homepage2';
+
 const App = () => {
+  // const [update, setUpdate] = useState(0)
+
   return (
     <div className="App">
-    
+     
       <BrowserRouter>
         <Routes>
-        <Route path='/' element={<Homepage/>}/>
-        <Route path='/Homepage' element={<Homepage/>}/>
+        <Route path='/' element={<Homepage2/>}/>
+        <Route path='/Homepage' element={<Homepage2/>}/>
          <Route path='/About' element={<About/>}/>
          <Route path='/Cart' element={<Cart/>}/>
          <Route path='/SmallWalnutBowl' element={<SmallWalnutBowl/>}/>
@@ -34,8 +38,11 @@ const App = () => {
          <Route path='/WoodbowlTurning' element={<WoodbowlTurning/>}/>
          <Route path='/Herbal' element={<HerbalTinctures/>}/>
          <Route path='/Joe' element={<Joe/>}/>
+         <Route path='/Homepage2' element={<Homepage2/>}/>
          </Routes>
          </BrowserRouter>
+         {/* <Products update={update} setUpdate={setUpdate} */}
+{/* <Cart update={update} */}
         
          {/* <Header /> */}
     </div>
@@ -43,3 +50,5 @@ const App = () => {
 }
 
 export default App;
+
+

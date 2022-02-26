@@ -21,6 +21,9 @@ EDIT ON
   left: 0; */
   height: 100%;
   transform: translate3d(0, 0, 0);
+  position: relative;
+  right:700px;
+  top:900px;
 }
 
 /* .tech-slideshow #one {
@@ -37,19 +40,17 @@ EDIT ON
 } */
 .tech-slideshow #two {
     animation: moveSlideshow 12s linear infinite;
-    position:relative;
+    /* position:relative;
     top:300px;
-    right:400px;
+    right:400px; */
     height:300px;
     background-color: rgba(148, 120, 120, 0.43);
   }
 
   .tech-slideshow #one {
     animation: moveSlideshow 12s linear infinite;
-    position:relative;
-      top:300px;
-      right:400px;
-      height:300px;
+    /* position:relative;
+    right:200px; */
       background-color: rgba(148, 120, 120, 0.43);
   }
 

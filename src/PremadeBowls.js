@@ -8,7 +8,7 @@ const PremadeBowls = () => {
 return(
 <div>
   <div id='woodBowls' className='woodBowl2'>
-      <p>Wood bowls</p>
+      <p id='woodText'>Wood bowls</p>
         <div className='thinLine'></div>
   </div>
   <div className='gallery' id='bowls'>
@@ -35,7 +35,7 @@ return(
     <img id="woodBowl4"  src={require('./photos/IMG_7902.jpg')}class="gallery__img" alt="Image 4"/>
     </figure>
 
-<div className='backPhoto5'><p id='Walnut'>Padauk</p></div>
+<div className='backPhoto5'><p id='Walnut'>Maple</p></div>
     <figure class="gallery__item gallery__item--5">
     <img id="woodBowl5"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/>
     </figure>

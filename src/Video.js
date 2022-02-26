@@ -8,13 +8,13 @@ const Video = () => {
     <div>
 <div id='classes' className='woodBowl2'>
       <p>Classes</p>
-        <div className='thinLine'></div>
+        <div className='thinLineClasses'></div>
   </div>
-
+{/* 
   <NavLink exact to='/WoodbowlTurning'>
 <p>Wood Bowl Turning</p>
 </NavLink>
-<p>Herbal Tincture Making</p>
+<p>Herbal Tincture Making</p> */}
       
         <div class="tech-slideshow">
         <div>

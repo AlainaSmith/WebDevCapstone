@@ -12,26 +12,36 @@ const UserAccount = () => {
 
     return(
         <div>
-             <div className='pinkHeader'>
-   <h2>Sign up or Login</h2>
-  <div className='greyHeader'>
-    <div id='options'>
-      <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
-      <a id='two' href="#tinctures">Herbal Tinctures</a>
-      <a id='three' href="#classes">Classes</a>
-      <NavLink exact to='/userAccount'>
-      <FaUserCircle/>
-      </NavLink>
-      <NavLink exact to='/cart'>
-        <Badge color="secondary">
-          <ShoppingCartIcon />{" "}
-        </Badge>
-      </NavLink>
-    </div>
-   </div>
-  </div> 
-  <NavLink exact to='/Homepage'>
-  <img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
+            <div className = 'backgroundContainer'> 
+        
+        <div className='backgroundPhoto'>
+            <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+         
+        </div>
+<div id='fixed'>
+<div className='greyHeader'>
+  <div id='options'>
+    <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
+    <a id='jewelry' href="#jewelryLocator">Jewelry</a>
+    <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
+    <a id='classesId' href="#classes">Classes</a>
+    <NavLink id='userAccountIcon' exact to='/userAccount'>
+    <FaUserCircle/>
+    </NavLink>
+    <NavLink id='cart' exact to='/cart'>
+    <Badge color="secondary">
+        <ShoppingCartIcon />{" "}
+    </Badge>
+    </NavLink>
+    {/* <NavLink exact to='/Classes'>
+            Classes Demo
+    </NavLink> */}
+</div>
+</div>
+
+
+<NavLink exact to='/Homepage2'>
+  <img id="logoUser" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
 
 <div className='infoForm'>
@@ -42,6 +52,18 @@ const UserAccount = () => {
 <Register />
 <Login />
 </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+        </div>
         </div>
         
     )

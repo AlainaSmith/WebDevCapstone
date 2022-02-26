@@ -48,7 +48,7 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 
 
 
-  <NavLink exact to='/Homepage'>
+  <NavLink exact to='/Homepage2'>
   <img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
 

@@ -10,3 +10,68 @@
     position: relative;
     top: 40px;
 }
+
+
+.backgroundContainer{
+    height:800px;
+    width:180.6vh;
+    background-color: rgba(139, 128, 145, 0.801);
+    
+}
+.backgroundPhoto{
+    display:flex;
+    justify-content: center;
+  
+  
+}
+#back{
+    margin:20px;
+    border-radius:20px;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.438);
+}
+
+.options{
+  color:black
+}
+
+#woodbowl{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+#jewelry{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+
+#herbalTinctures{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+
+#classesId{
+  color:rgba(31, 29, 29, 0.719);
+  font-family: roboto;
+  font-weight: bold;
+ z-index:10;
+ position: relative;
+ top:10px;
+}
+
+#logoUser{
+    z-index:5;
+    position:relative;
+    right:600px;
+
+}

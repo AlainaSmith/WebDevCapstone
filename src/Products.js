@@ -1,19 +1,39 @@
-import React from "react";
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
+import ProductCard from './ProductCard'
 
-const Product = (props) => {
-    const { product, onAdd} = props;
-    return(
-        <div>
-            <img className="bowl1" src={product.image}></img>
-            <h3> {product.name}</h3>
-            <div>${product.price}</div>
-            <div>
-                <button onClick={onAdd}>Add to Cart</button>
-               
-            
-            </div>
-        </div>
-    )
+const Products = ({update, setUpdate}) => {
+  const [data, setData] = useState([])
+
+  const addToCart = (id) => {
+    let object = {
+      userID: 1,
+      productID: id
+    }
+
+    axios.post('http://localhost:4000/api/addToCart', object)
+    .then((res) => {
+      console.log(res.data)
+      setUpdate(++update)
+    })
+  }
+
+  useEffect(() => {
+    axios.get('http://localhost:4000/api/allProducts')
+    .then((res) => {
+      console.log(res.data)
+      setData(res.data)
+    })
+  }, [])
+  
+  return (
+    <div className='page-container'>
+      <h2>Products Available</h2>
+      {data.map((element, index) => {
+        return <ProductCard data={element} key={index} addToCart={addToCart}/>
+      }) }
+    </div>
+  )
 }
 
-export default Product
+export default Products
