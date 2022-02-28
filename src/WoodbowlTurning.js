@@ -4,48 +4,46 @@ import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { NavLink } from "react-router-dom";
 import './WoodbowlTurning.css'
+import Products from "./Products";
 
 const WoodbowlTurning = () => {
 const userfirstName = window.localStorage.getItem('userfirstName')
  console.log(userfirstName)
 
+
 return(
-<div>
-<div className='pinkHeader'>
 
-<NavLink id='userHeader' exact to='/Welcome'>
-
-<p className='user'>Hi, {userfirstName}!</p>
-
-</NavLink>
-
-<div className='wrapper'>
-<h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
-</div>
-<div className='greyHeader'>
-<div id='options'>
-<a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
-<a id='two' href="#tinctures">Herbal Tinctures</a>
-<a id='three' href="#classes">Classes</a>
-<NavLink id='userAccountIcon' exact to='/userAccount'>
-<FaUserCircle/>
-</NavLink>
-<NavLink id='cart' exact to='/cart'>
-<Badge color="secondary">
-<ShoppingCartIcon />{" "}
-</Badge>
-</NavLink>
-<NavLink exact to='/Classes'>
-Classes Demo
-</NavLink>
+<div className = 'backgroundContainerWoodTurn'> 
+        <div className='backgroundPhoto'>
+            <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+        </div>
+        <div id='fixed'>
+        <div className='greyHeader'>
+        <div id='options'>
+        <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
+        <a id='jewelry' href="#jewelryLocator">Jewelry</a>
+        <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
+        <a id='classesId' href="#classes">Classes</a>
+        <NavLink id='userAccountIcon' exact to='/userAccount'>
+        <FaUserCircle/>
+        </NavLink>
+        <NavLink id='cart' exact to='/cart'>
+        <Badge color="secondary">
+        <ShoppingCartIcon />{" "}
+        </Badge>
+        </NavLink>
 </div>
 </div>
-</div> 
 
-<NavLink exact to='/Homepage'>
-<img id="logo" height="300px" width="300px" src={require('./photos/logo2.png')} />
+<NavLink exact to='/Homepage2'>
+  <img id="logoUser" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
+</div>
 
+<NavLink id='userWood' exact to='/Welcome'>
+<p className='userWoodBowl'>Hi, {userfirstName}!</p>
+
+</NavLink>
 
 <div id='dates'>
 <p>Dates & Times</p>
@@ -74,6 +72,7 @@ Additional Notes:
 </p>
 </div>
 
+<Products />
 
         </div>
     )

@@ -59,8 +59,21 @@
   margin: 2rem auto;
 } */
 
-
-
+#woodBowl:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#woodBowl4:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#woodBowl5:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#woodBowl6:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#woodBowl7:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
 #woodBowls{
   display:flex;
   margin-left: auto;
@@ -408,12 +421,78 @@ white-space: nowrap;
 
 }
 
+#pinkTinc1:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#pinkTinc2:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#pinkTinc3:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#pinkTinc4:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+
 #tincturesPhoto{
   position:relative;
   top:170px;
   right:200px;
   height:150px;
   width:150px;
+}
+
+#reishiPhoto{
+  position:relative;
+  top:170px;
+  right:100px;
+  height:180px;
+  width:90px;
+}
+
+#bigTinc{
+  position:relative;
+  top:170px;
+  right:90px;
+  height:180px;
+  width:140px;
+}
+
+.centerTinctures{
+position:relative;
+left:40px
+}
+
+#pinkTinc1{
+  position:relative;
+  top:170px;
+  right:140px;
+  height:200px;
+  width:120px;
+
+}
+
+#pinkTinc2{
+  position:relative;
+  top:170px;
+  right:80px;
+  height:200px;
+  width:120px;
+}
+
+#pinkTinc3{
+  position:relative;
+  top:170px;
+  right:20px;
+  height:200px;
+  width:120px;
+}
+#pinkTinc4{
+  position:relative;
+  top:170px;
+  right:-50px;
+  height:200px;
+  width:120px;
 }
 
 #classes{

@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from 'react';
 import Header from './Header';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from './About';
@@ -15,6 +16,9 @@ import WoodbowlTurning from './WoodbowlTurning';
 import HerbalTinctures from './Herbal';
 import Joe from './Joe';
 import Homepage2 from './Homepage2';
+import Products from './Products';
+
+
 
 const App = () => {
   // const [update, setUpdate] = useState(0)
@@ -22,7 +26,7 @@ const App = () => {
   return (
     <div className="App">
      
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         <Routes>
         <Route path='/' element={<Homepage2/>}/>
         <Route path='/Homepage' element={<Homepage2/>}/>
@@ -39,10 +43,11 @@ const App = () => {
          <Route path='/Herbal' element={<HerbalTinctures/>}/>
          <Route path='/Joe' element={<Joe/>}/>
          <Route path='/Homepage2' element={<Homepage2/>}/>
+         
          </Routes>
-         </BrowserRouter>
-         {/* <Products update={update} setUpdate={setUpdate} */}
-{/* <Cart update={update} */}
+         {/* </BrowserRouter> */}
+         {/* <Products update={update} setUpdate={setUpdate}/>
+          <Cart update={update}/> */}
         
          {/* <Header /> */}
     </div>

@@ -1,71 +1,81 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import Header from './Header';
 import axios from 'axios';
 import CartCounter from './cartCounter';
 import {FaUserCircle} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-
+import './SmallWalnutBowl.css'
+import Products from './Products';
+import ProductCard from './ProductCard';
 
 const SmallWalnutBowl = () => {
 //    const [product_id, setProduct_id]
 
 // const handleSubmit = (e) => {
 //     e.preventDefault()
-//     axios.post('http://localhost:3500/SmallWalnutBowl', {
-
+//     axios.get('http://localhost:3500/SmallWalnutBowl', {
 //     })
 // }
 
 const userfirstName = window.localStorage.getItem('userfirstName')
  console.log(userfirstName)
-    return(
-        <div>
-        <div className='pinkHeader'>
 
-<NavLink id='userHeader' exact to='/Welcome'>
+return(
+<div className = 'backgroundContainerWalnut' id='userContainer'> 
+  <div className='backgroundPhoto'>
+    <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+</div>
+ <div id='fixed'>
+ <div className='greyHeader'>
+  <div id='options'>
+    <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
+    <a id='jewelry' href="#jewelryLocator">Jewelry</a>
+    <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
+    <a id='classesId' href="#classes">Classes</a>
+    <NavLink id='userAccountIcon' exact to='/userAccount'>
+    <FaUserCircle/>
+    </NavLink>
+    <NavLink id='cart' exact to='/cart'>
+    <Badge color="secondary">
+        <ShoppingCartIcon />{" "}
+    </Badge>
+    </NavLink>
+    <div id='userLink'>
+    <NavLink id='userHeader' exact to='/Welcome'>
+    <p className='user'>Hi, {userfirstName}!</p>
+    </NavLink>
+    </div>
 
+  </div>
+</div>
+
+    <NavLink exact to='/Homepage2'>
+     <img id="logoUser" height="200px" width="200px" src={require('./photos/logo.png')} />
+    </NavLink>
+
+{/* <NavLink id='userHeader' exact to='/Welcome'>
 <p className='user'>Hi, {userfirstName}!</p>
+</NavLink> */}
 
-</NavLink>
-
-<div className='wrapper'>
-<h4 id='sale' className='marquee'>Graduation Sale: 25% all bowls & classes!</h4>
-</div>
-<div className='greyHeader'>
-<div id='options'>
-<a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
-<a id='two' href="#tinctures">Herbal Tinctures</a>
-<a id='three' href="#classes">Classes</a>
-<NavLink id='userAccountIcon' exact to='/userAccount'>
-<FaUserCircle/>
-</NavLink>
-<NavLink id='cart' exact to='/cart'>
-<Badge color="secondary">
-<ShoppingCartIcon />{" "}
-</Badge>
-</NavLink>
-<NavLink exact to='/Classes'>
-Classes Demo
-</NavLink>
-</div>
-</div>
-</div> 
-
-<NavLink exact to='/Homepage'>
-<img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
-</NavLink>
-            <h1>Walnut Bowl</h1>
-            <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7910.PNG')} />
-            <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7914.PNG')} />
-            <img id="bowl1" height="300px" width="300px" src={require('./photos/IMG_7912.PNG')} />
+            <p id='walnutBowl'>Small Walnut Bowl</p>
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7910.PNG')} />
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7914.PNG')} />
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7912.PNG')} />
         <form>
-            <h3>$20</h3>
-            <button>Add To Cart</button>
+            <h3 id='des'>$20</h3>
+        
         </form>
-        </div>
-    )
+        <p id='des'>Small walnut bowl, finished with mineral oil and wax. </p>
+    <p id='directions'>Directions for care:</p>
+ </div>
+
+
+    <Products />
+
+
+</div>
+)
 }
 
 export default SmallWalnutBowl

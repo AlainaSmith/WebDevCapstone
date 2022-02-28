@@ -1,0 +1,72 @@
+#backPhotoJewl{
+    background-color: rgba(22, 141, 131, 0.212);
+    height: 70px;
+    width:180px;
+    position:relative;
+    right:798px;
+    top:130px;
+    /* z-index:-1; */
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+
+#backPhotoJewl2{
+    background-color: rgba(22, 141, 131, 0.212);
+  height: 70px;
+  width:180px;
+  position:relative;
+  right:797px;
+  top:130px;
+  /* z-index:-1; */
+  border-radius:6px;
+  box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+
+#backPhotoJewl3{
+    background-color: rgba(22, 141, 131, 0.212);
+  height: 70px;
+  width:180px;
+  position:relative;
+  right:390px;
+  top:35px;
+  box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+  border-radius:6px
+}
+
+#backPhotoJewl4{
+    background-color: rgba(22, 141, 131, 0.212);
+  height: 70px;
+  width:180px;
+  position:relative;
+  right:391px;
+  top:35px;
+  border-radius:6px;
+  box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+
+#backPhotoJewl5{
+    background-color: rgba(22, 141, 131, 0.212);
+    height: 70px;
+    width:180px;
+    position:relative;
+    right:485px;
+    top:165px;
+    box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+    border-radius:6px
+}
+
+#backPhotoJewl6{
+    background-color: rgba(22, 141, 131, 0.212);
+    height: 70px;
+    width:180px;
+    position:relative;
+    right:900px;
+    top:163px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+
+/* .allJewl{
+  position:relative;
+  left:90px;
+} */

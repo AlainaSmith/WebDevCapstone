@@ -12,7 +12,7 @@ const UserAccount = () => {
 
     return(
         <div>
-            <div className = 'backgroundContainer'> 
+            <div className = 'backgroundContainer' id='userAccountContainer'> 
         
         <div className='backgroundPhoto'>
             <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
@@ -39,32 +39,35 @@ const UserAccount = () => {
 </div>
 </div>
 
-
 <NavLink exact to='/Homepage2'>
   <img id="logoUser" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
+</div>
+
 
 <div className='infoForm'>
-  <h3>Login or Create an account to sign up for classes, redeem rewards, keep track of purchases and where your proceeds will go!</h3>
+  <h3>Login or Create an Account to:</h3>
+    <p>Acquire rewards</p>
+    <p>Sign up for classes</p>
+    <p>Keep track of purchases</p>
+    <p>See where your proceeds go!</p> 
+    
   </div>
 
 <div id='placement' className="register">
 <Register />
 <Login />
+<p id='copyright'>Copyright © 2022, Hopes&Trees Collective</p>
 </div>
+
+</div>
+
+
+{/* <div className='greenBar'></div> */}
+
+
 </div> 
 
-
-
-
-
-
-
-
-
-
-        </div>
-        </div>
         
     )
 }

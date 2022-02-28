@@ -1,17 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import SmallWalnutBowl from './SmallWalnutBowl'
 import ProductCard from './ProductCard'
+import './SmallWalnutBowl'
 
 const Products = ({update, setUpdate}) => {
   const [data, setData] = useState([])
 
   const addToCart = (id) => {
     let object = {
-      userID: 1,
-      productID: id
+      user_ID: 1,
+      product_ID: id
     }
 
-    axios.post('http://localhost:4000/api/addToCart', object)
+    axios.post('http://localhost:3500/api/addToCart', object)
     .then((res) => {
       console.log(res.data)
       setUpdate(++update)
@@ -19,7 +21,7 @@ const Products = ({update, setUpdate}) => {
   }
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/allProducts')
+    axios.get('http://localhost:3500/api/allProducts')
     .then((res) => {
       console.log(res.data)
       setData(res.data)
@@ -32,7 +34,9 @@ const Products = ({update, setUpdate}) => {
       {data.map((element, index) => {
         return <ProductCard data={element} key={index} addToCart={addToCart}/>
       }) }
+
     </div>
+
   )
 }
 

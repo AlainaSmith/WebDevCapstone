@@ -90,3 +90,103 @@ CREATE TABLE product_type(
 product_type_id SERIAL PRIMARY KEY
 );
 
+
+
+INSERT INTO concerts (concert_id, band_name, location, date)
+VALUES (4, 'Marcus King Band', 'The Intersection', '11/17/19');
+
+INSERT INTO concerts (concert_id, band_name, location, date)
+VALUES (5, 'Dead & Company', 'DTE', '7/16/16');
+
+SELECT * FROM concerts
+WHERE (band_name = 'The Intersection'
+OR location = 'The Intersection'
+OR date = 'The Intersection');
+
+INSERT INTO concerts(concert_id, band_name, location, date)
+VALUES ()
+
+
+
+
+
+ALTER TABLE users
+ADD COLUMN proceeds VARCHAR(100) NOT NULL DEFAULT '0'
+
+ALTER TABLE users
+DROP COLUMN rewards
+
+ALTER TABLE users
+ADD COLUMN rewards VARCHAR(100) NOT NULL DEFAULT '0'
+
+UPDATE users
+SET rewards = '50 points'
+WHERE user_id = 8
+
+UPDATE users
+SET rewards = '250 points'
+WHERE user_id = 19
+
+UPDATE users
+SET rewards = '10 points'
+WHERE user_id = 16;
+
+ALTER TABLE users
+DROP COLUMN classes
+
+ALTER TABLE users
+ADD COLUMN classes VARCHAR(100) NOT NULL DEFAULT 'No classes'
+
+UPDATE users
+SET classes = 'Wood Bowl Turning on March 21'
+WHERE user_id = 16;
+
+UPDATE users
+SET classes = 'Wood Bowl Turning on March 21'
+WHERE user_id = 19
+
+ALTER TABLE users
+ADD COLUMN purchases VARCHAR(100) NOT NULL DEFAULT '0'
+
+UPDATE users
+SET purchases = 'Small Walnut Bowl, 2oz Chaga Tincture'
+WHERE user_id = 16;
+
+UPDATE users
+SET purchases = 'Small Walnut Bowl'
+WHERE user_id = 19
+
+ALTER TABLE users
+DROP COLUMN purchases
+
+CREATE TABLE subscribe(
+            subscribe_id SERIAL PRIMARY KEY,
+            firstName VARCHAR(100),
+            lastName VARCHAR(100),
+            email_address VARCHAR(100) 
+        );
+
+INSERT INTO subscribe 
+        (firstName, lastName, email_address)
+        VALUES ('${firstName}', '${lastName}', '${email_address}');
+
+
+CREATE TABLE cart (
+            cart_id SERIAL PRIMARY KEY,
+            user_id INT REFERENCES users(user_id),
+            product_id INT REFERENCES products(product_id) 
+        );
+
+        CREATE TABLE products(
+            product_id SERIAL PRIMARY KEY,
+            product_name VARCHAR(100),
+            product_description VARCHAR(1000)
+        );
+
+INSERT INTO products(
+product_name, product_description)
+VALUES('Small Walnut Bowl', 'Just a lil guy!')
+
+INSERT INTO products(
+product_name, product_description)
+VALUES('Small Padauk Bowl', 'Lovely colors')

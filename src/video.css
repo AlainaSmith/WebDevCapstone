@@ -1,5 +1,3 @@
-
-
 HTML CSSResult Skip Results Iframe
 EDIT ON
 .tech-slideshow {
@@ -12,9 +10,9 @@ EDIT ON
 
 }
 
-.tech-slideshow > div {
+.tech-slideshow {
   height: 200px;
-  width: 2526px;
+  width: 3026px;
   /* background: url(https://player.vimeo.com/video/679806687?h=6d0493bf10&autoplay=1&loop=1&title=0&byline=0&portrait=0); */
   /* position: absolute;
   top: 0;
@@ -22,24 +20,20 @@ EDIT ON
   height: 100%;
   transform: translate3d(0, 0, 0);
   position: relative;
-  right:700px;
+  right:900px;
   top:900px;
+
 }
 
-/* .tech-slideshow #one {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    background-position: 0 -200px;
-    animation: moveSlideshow 15s linear infinite;
-  } */
-/* .tech-slideshow #two {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 15s linear infinite;
-} */
-.tech-slideshow #two {
-    animation: moveSlideshow 12s linear infinite;
+  .tech-slideshow #one {
+    animation: moveSlideshow 25s linear infinite;
+    /* position:relative;
+    right:200px; */
+      background-color: rgba(148, 120, 120, 0.43);
+  }
+
+  .tech-slideshow #two {
+    animation: moveSlideshow 25s linear infinite;
     /* position:relative;
     top:300px;
     right:400px; */
@@ -47,14 +41,50 @@ EDIT ON
     background-color: rgba(148, 120, 120, 0.43);
   }
 
-  .tech-slideshow #one {
-    animation: moveSlideshow 12s linear infinite;
-    /* position:relative;
-    right:200px; */
-      background-color: rgba(148, 120, 120, 0.43);
+
+  .tech-slideshow #three {
+    animation: moveSlideshow 25s linear infinite;
+  
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+  }
+  .tech-slideshow #four {
+    animation: moveSlideshow 25s linear infinite;
+  
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+  }
+  .tech-slideshow #five {
+    animation: moveSlideshow 25s linear infinite;
+
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
   }
 
+ 
+#uno{
+  display: inline-block;
+}
+#dos{
+  display: inline-block;
+}
+#tres{
+  display: inline-block;
+}
 
+#quatre{
+  display: inline-block;
+  /* height:100px;
+  width:200px;
+  position: relative;
+  right:500px; */
+}
+
+
+#cinc{
+  display: inline-block;
+  
+}
 /* .tech-slideshow:hover #two {
   opacity: 1;
 } */
@@ -75,9 +105,53 @@ EDIT ON
 }
 
 
+li::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+
+  #classesOff{
+    position:relative;
+    top:400px;
+    
+
+  }
+
+  #inline0{
+    display:inline;
+    position:relative;
+    right:100px;
+  }
+  #inline1{
+    display:inline;
+    position:relative;
+    right:60px;
+  }
+
+  #inline2{
+    display:inline;
+    position:relative;
+    right:30px;
+  }
+  #inline3{
+    display:inline;
+    position:relative;
+    right:10px;
+  }
 
 
 
-
+/* .tech-slideshow #one {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+  } */
+/* .tech-slideshow #two {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+} */
 
 

@@ -1,17 +1,26 @@
 
-  .user{
-
+ #userAccountIcon{
+  color: black;
+  position:relative;
+  top:13px;
 }
 
-#userHeader{
+#cart{
+color:black;
+position: relative;
+top:10px;
 }
-
-
+#cart:hover{
+  color:rgb(60, 133, 133)
+}
+#userAccountIcon:hover{
+  color:rgb(60, 133, 133)
+  }
 .backgroundContainer{
     height:5000px;
     width:180.6vh;
-    background-color: rgba(139, 128, 145, 0.801);
-    
+    /* background-color: rgba(139, 128, 145, 0.801); */
+    background-color: rgba(170, 104, 115, 0.671)
 }
 .backgroundPhoto{
     display:flex;
@@ -21,7 +30,8 @@
 }
 #back{
     margin:20px;
-    border-radius:20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.438);
 }
 
@@ -37,6 +47,21 @@
  position: relative;
  top:10px;
 }
+
+#woodbowl:hover{
+color:rgb(60, 133, 133)
+}
+#jewelry:hover{
+  color:rgb(60, 133, 133)
+  }
+
+#herbalTinctures:hover{
+    color:rgb(60, 133, 133)
+    }
+#classesId:hover{
+      color:rgb(60, 133, 133)
+      }
+
 #jewelry{
   color:rgba(31, 29, 29, 0.719);
   font-family: roboto;
@@ -71,12 +96,42 @@
    top:180px;
    
 }
+
+#nowrap{
+  display: inline-block;
+ 
+} 
+
 #greet{
     position:relative;
     bottom: 750px;
-  line-height: 1.5;
     font-size: 26px;
     font-family: roboto;
+    display:inline;
+    word-spacing: 10%;
+}
+
+#greet2{
+display:inline;
+position: relative;
+left:10px
+}
+
+#greetWelcome {
+  position:relative;
+  bottom: 730px;
+  font-size: 26px;
+  font-family: roboto;
+}
+#userHomepage{
+color:black;
+  font-size: 22px;
+  font-family: roboto;
+  font-style: italic;
+  word-spacing: 10%;
+}
+#userHomepage:hover{
+  color:rgb(60, 133, 133)
 }
 
 #aboutContainer{
@@ -163,9 +218,10 @@ width: 1065px;
   #jewelryLocator{
     height:100px;
     position:relative;
-    bottom:-206px;
+    bottom:-136px;
     left:170px;
     background-color:rgb(88, 38, 38);
+  
   }
   /* #four{
     background-color: rgb(107, 124, 118);

@@ -1,73 +1,105 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import './Homepage.css'
 import {FaUserCircle} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Welcome from "./Welcome";
+import axios from 'axios'
+import ProductLoop from './productLoop'
 
-const Cart = (props) => {
-    // const {cartItems, onAdd, onRemove} = props
-    // const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
-    // const totalPrice = itemsPrice
-    return(
-        <div>
-   
-   <div className='pinkHeader'>
-   <h2>Cart</h2>
-  <div className='greyHeader'>
-    <div id='options'>
-      <a id='one' href="#woodBowl">Wood bowls / Jewelry</a>
-      <a id='two' href="#tinctures">Herbal Tinctures</a>
-      <a id='three' href="#classes">Classes</a>
-      <NavLink exact to='/userAccount'>
-      <FaUserCircle/>
-      </NavLink>
-      <NavLink exact to='/cart'>
+
+// import ItemCard from './ItemCard'
+
+const Cart = ({update}) => {
+  const [data, setData] = useState([])
+
+  let currentUser = 1
+
+  const getData = () => {
+      axios.get(`http://localhost:3500/api/userCart/${currentUser}`)
+      .then((res) => {
+          setData(res.data)
+      })
+  }
+
+  const getFromCart = (id) => {
+    let object = {
+      user_ID: 1,
+      product_ID: id
+    }
+    axios.get('http://localhost:3500/api/getFromCart', object)
+    .then((res) => {
+      console.log(res.data)
+    })
+  }
+
+  const removeItem = (product_id) => {
+      axios.delete(`http://localhost:3500/api/userCart/${product_id}`)
+      .then((res) => {
+          getData()
+      })
+  }
+
+  useEffect(() => {
+      getData()
+  }, [update])
+
+
+    useEffect(() => {
+    getFromCart()
+}, [update])
+
+return(
+   <div className = 'backgroundContainer'> 
+        <div className='backgroundPhoto'>
+            <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+        </div>
+        <div id='fixed'>
+        <div className='greyHeader'>
+        <div id='options'>
+        <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
+        <a id='jewelry' href="#jewelryLocator">Jewelry</a>
+        <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
+        <a id='classesId' href="#classes">Classes</a>
+        <NavLink id='userAccountIcon' exact to='/userAccount'>
+        <FaUserCircle/>
+        </NavLink>
+        <NavLink id='cart' exact to='/cart'>
         <Badge color="secondary">
-          <ShoppingCartIcon />{" "}
+        <ShoppingCartIcon />{" "}
         </Badge>
-      </NavLink>
-    </div>
-   </div>
-  </div> 
+        </NavLink>
+</div>
+</div>
 
-<NavLink exact to='/Homepage'>
-<img id="logo" height="200px" width="200px" src={require('./photos/logo.png')} />
+<NavLink exact to='/Homepage2'>
+  <img id="logoUser" height="200px" width="200px" src={require('./photos/logo.png')} />
 </NavLink>
+</div>
 
 
-        {/* <aside className='block col-1'>
-            <h2> cart items</h2>
-            <div>{cartItems.length === 0 && <div>Cart is empty</div>}</div>
-        {cartItems.map((item)=>(
-            <div key={item.id} className='row'>
-                <div>{item.name}</div>
-                <div>
-                    <button onClick={()=>onAdd(item)} className="add">+</button>
-                    <button onClick={()=>onRemove(item)} className="remove">-</button>
-                </div>
-            <div>
-            {item.qty} x ${item.price.toFixed(2)}
-            </div>
-            </div>
-        ))}
-        {cartItems.length !== 0 && (
-            <>
-            <hr></hr>
-            <div>
-                <div>Items Price</div>
-                <div>{itemsPrice.toFixed(2)}</div>
-            </div>
-            </>
-        )}
-        </aside> */}
-           
+<h2>My Cart</h2>
+      {data.map((element, index) => {
+        return <ProductLoop data={element} key={index} removeItem={removeItem}/>
+      }) }
+ 
+     
+
+       
         </div>
     )
 }
 
 export default Cart
+
+
+
+
+
+
+
+
 
 // import ItemCard
 
@@ -102,3 +134,33 @@ export default Cart
 //     })}
 //   </div>
 // )
+
+
+
+
+ {/* <aside className='block col-1'>
+            <h2> cart items</h2>
+            <div>{cartItems.length === 0 && <div>Cart is empty</div>}</div>
+        {cartItems.map((item)=>(
+            <div key={item.id} className='row'>
+                <div>{item.name}</div>
+                <div>
+                    <button onClick={()=>onAdd(item)} className="add">+</button>
+                    <button onClick={()=>onRemove(item)} className="remove">-</button>
+                </div>
+            <div>
+            {item.qty} x ${item.price.toFixed(2)}
+            </div>
+            </div>
+        ))}
+        {cartItems.length !== 0 && (
+            <>
+            <hr></hr>
+            <div>
+                <div>Items Price</div>
+                <div>{itemsPrice.toFixed(2)}</div>
+            </div>
+            </>
+        )}
+        </aside> */}
+           

@@ -6,7 +6,20 @@
                 -10px 20px 5px rgba(0,0,0,0.05);
     font-size: 29px;
    position: relative;
-   top:45px;
+   bottom:650px
+}
+
+#datesWelcome{
+
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(110, 112, 110, 0.566);
+        height: 400px;
+        width:800px;
+        margin:auto;
+      
+ 
 }
 
 .rewards{
@@ -17,6 +30,9 @@
     margin-right: auto;
     border-radius:30px;
     margin:30px;
+    position:relative;
+    bottom:400px;
+
 }
 #text{
 position:relative;

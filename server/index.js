@@ -97,19 +97,7 @@ app.post('/CustomWoodBowls', async(req,res) => {
   .catch((err)=>console.log(err))
 })
 
-//can store locally in browswer storage, or
 
-// app.post('/subscribe', async(req,res) => {
-//   const {firstName, lastName, email_address} = req.body
-//   const subscribeUser = await sequelize.query(`
-//     SELECT * FROM usersSub WHERE 
-//     firstName = '${firstName}' 
-//     lastName = '${lastName}'
-//     email_address = '${email_address}'
-//   `).catch((err) => console.log(err))
-//   // if(subscribeUser === )
-  
-// })
 
 app.post('/SmallWalnutBowl', async(req,res) => {
   
@@ -158,33 +146,60 @@ app.get('/api/allProducts', async (req, res) => {
 app.get('/api/userCart/:id', async (req, res) => {
   const {id} = req.params
   const myCart = await sequelize.query(`
-    SELECT c.id as cart_id, p.name, p.description FROM cart c
+    SELECT c.cart_id, p.product_name, p.product_description FROM cart c
     JOIN products p
-    ON c.product_id = p.id
+    ON c.product_id = p.product_id
     WHERE c.user_id = ${id}
   `)
   res.status(200).send(myCart[0])
 })
 
+
+app.get('/api/getFromCart', async (req, res) => {
+  let products = await sequelize.query(`
+  SELECT * FROM products
+  WHERE product_name='Small Walnut Bowl'
+  `)
+  res.status(200).send(products[0])
+})
+
+
+
+
 app.post('/api/addToCart', async (req, res) => {
-  const {userID, productID} = req.body
+  const {user_ID, product_ID} = req.body
   await sequelize.query(`
     INSERT INTO cart (user_id, product_id)
     VALUES (
-      ${userID},
-      ${productID}
+      ${user_ID},
+      ${product_ID}
     )
   `)
   res.status(200).send("Item added to cart")
 })
 
+
+// app.post('/api/getFromCart', async (req, res) => {
+//   const {user_ID, product_ID} = req.body
+//   await sequelize.query(`
+//     INSERT INTO cart (user_id, product_id)
+//     VALUES (
+//       ${user_ID},
+//       ${product_ID}
+//     )
+//   `)
+//   res.status(200).send("Item added to cart")
+// })
+
+
 app.delete('/api/userCart/:id', async (req, res) => {
   const {id} = req.params
   await sequelize.query(`
-    DELETE FROM cart WHERE id = ${id}
+    DELETE FROM cart WHERE cart_id = ${id}
   `)
   res.status(200).send("Removed from Cart")
 })
+
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, '../build', 'index.html'))
@@ -194,3 +209,20 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
 
+
+
+
+
+//can store locally in browswer storage, or
+
+// app.post('/subscribe', async(req,res) => {
+//   const {firstName, lastName, email_address} = req.body
+//   const subscribeUser = await sequelize.query(`
+//     SELECT * FROM usersSub WHERE 
+//     firstName = '${firstName}' 
+//     lastName = '${lastName}'
+//     email_address = '${email_address}'
+//   `).catch((err) => console.log(err))
+//   // if(subscribeUser === )
+  
+// })
