@@ -1,21 +1,27 @@
 #backPhotoJewl{
     background-color: rgba(22, 141, 131, 0.212);
     height: 70px;
-    width:180px;
+    width:170px;
     position:relative;
-    right:798px;
+    right:780px;
     top:130px;
     /* z-index:-1; */
     border-radius:6px;
     box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
 }
+#first{
+  margin-top: 30px;
+  color:rgb(70, 64, 64);
+  font-family: roboto;
+  font-size:17px;
+}
 
 #backPhotoJewl2{
     background-color: rgba(22, 141, 131, 0.212);
   height: 70px;
-  width:180px;
+  width:160px;
   position:relative;
-  right:797px;
+  right:785px;
   top:130px;
   /* z-index:-1; */
   border-radius:6px;
@@ -25,9 +31,9 @@
 #backPhotoJewl3{
     background-color: rgba(22, 141, 131, 0.212);
   height: 70px;
-  width:180px;
+  width:160px;
   position:relative;
-  right:390px;
+  right:394px;
   top:35px;
   box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
   border-radius:6px
@@ -36,9 +42,9 @@
 #backPhotoJewl4{
     background-color: rgba(22, 141, 131, 0.212);
   height: 70px;
-  width:180px;
+  width:160px;
   position:relative;
-  right:391px;
+  right:405px;
   top:35px;
   border-radius:6px;
   box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
@@ -47,12 +53,13 @@
 #backPhotoJewl5{
     background-color: rgba(22, 141, 131, 0.212);
     height: 70px;
-    width:180px;
+    width:170px;
     position:relative;
-    right:485px;
-    top:165px;
+    right:705px;
+    top:215px;
     box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
-    border-radius:6px
+    border-radius:6px;
+    
 }
 
 #backPhotoJewl6{
@@ -60,13 +67,44 @@
     height: 70px;
     width:180px;
     position:relative;
-    right:900px;
-    top:163px;
+    right:500px;
+    top:215px;
     border-radius:6px;
     box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
 }
 
-/* .allJewl{
+#backPhotoJewl7{
+  background-color: rgba(22, 141, 131, 0.212);
+  height: 70px;
+  width:180px;
   position:relative;
-  left:90px;
-} */
+  right:495px;
+  top:120px;
+  border-radius:6px;
+  box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+
+
+
+
+  #jewl1:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl2:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl3:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl4:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl5:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl6:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }
+  #jewl7:hover{
+    box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  }

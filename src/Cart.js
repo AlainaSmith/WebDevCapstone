@@ -7,11 +7,14 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Welcome from "./Welcome";
 import axios from 'axios'
 import ProductLoop from './productLoop'
+import './Cart.css'
 
 
 // import ItemCard from './ItemCard'
 
 const Cart = ({update}) => {
+const userfirstName = window.localStorage.getItem('userfirstName')
+console.log(userfirstName)
   const [data, setData] = useState([])
 
   let currentUser = 1
@@ -51,7 +54,7 @@ const Cart = ({update}) => {
 }, [update])
 
 return(
-   <div className = 'backgroundContainer'> 
+   <div className = 'backgroundContainerCart'> 
         <div className='backgroundPhoto'>
             <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
         </div>
@@ -78,13 +81,13 @@ return(
 </NavLink>
 </div>
 
-
-<h2>My Cart</h2>
+<div className='cartStuff'>
+<h2 id='myCart'>{userfirstName}'s Cart</h2>
       {data.map((element, index) => {
         return <ProductLoop data={element} key={index} removeItem={removeItem}/>
       }) }
  
-     
+ </div>
 
        
         </div>

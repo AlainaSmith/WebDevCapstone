@@ -21,6 +21,7 @@ const handleSubmit = (e) => {
     password: password
 })
 .then((res) =>{
+  alert("Registered")
     console.log(res)
 
 })

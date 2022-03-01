@@ -7,7 +7,7 @@
     place-self:end;
     margin-top:calc(100vh + 50px);
     text-decoration: none;
-    width:150px;
+    width:155px;
     height: 40px;
     font-family: sans-serif;
     color: rgb(14, 12, 12);
@@ -19,14 +19,14 @@
 .link{
     background-image: linear-gradient(#ff2f97, #ff2f97);
     background-repeat: no-repeat;
-    background-size: 0% 100%;
+    background-size: 0% 10%;
     background-position-x: right;
     
     transition: background-size 500ms
 }
 
 .link:hover{
-    background-size: 100% 100%;
+    background-size: 14% 100%;
     background-position-x: left;
     z-index:10
 }

@@ -1,0 +1,24 @@
+.cartStuff{
+    position:relative;
+    bottom: 400px;
+    z-index:10
+}
+
+#myCart{
+position: relative;
+bottom:280px;
+color:rgb(10, 10, 10);
+font-family: roboto;
+   align-items: center;
+   text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                10px 20px 5px rgba(0,0,0,0.05),
+                -10px 20px 5px rgba(0,0,0,0.05);
+    font-size: 29px;
+    font-weight: 100;
+  
+}
+
+.backgroundContainerCart{
+    height:790px;
+    background-color: rgba(170, 104, 115, 0.671)
+}

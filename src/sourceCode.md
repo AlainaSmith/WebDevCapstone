@@ -450,3 +450,89 @@ export default Homepage */}
 //     (small, baby's breath, 10);
 
 
+Animation Stuff
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+.tech-slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+
+}
+
+.tech-slideshow {
+  height: 200px;
+  width: 3026px;
+  /* background: url(https://player.vimeo.com/video/679806687?h=6d0493bf10&autoplay=1&loop=1&title=0&byline=0&portrait=0); */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  
+  top:900px;
+
+
+}
+
+  .tech-slideshow #one {
+    animation: moveSlideshow 10s linear infinite;
+    /* position:relative;
+    right:200px; */
+      background-color: rgba(148, 120, 120, 0.43);
+      position: relative;
+  right:500px;
+  }
+
+  .tech-slideshow #two {
+    animation: moveSlideshow 15s linear infinite;
+    /* position:relative;
+    top:300px;
+    right:400px; */
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+    border-radius: 4px;
+    width:180px
+  }
+
+
+  .tech-slideshow #three {
+    animation: moveSlideshow 40s linear infinite;
+    border-radius: 4px;
+    width:180px;
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+  }
+  .tech-slideshow #four {
+    animation: moveSlideshow 45s linear infinite;
+    position:relative;
+    bottom:450px;
+    height:300px;
+    left:250px;
+    background-color: rgba(148, 120, 120, 0.43);
+  }
+  .tech-slideshow #five {
+    animation: moveSlideshow 50s linear infinite;
+
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+    position:relative;
+    bottom:450px;
+    left:200px;
+  }
+
+  .tech-slideshow #six {
+    animation: moveSlideshow 45s linear infinite;
+    position:relative;
+    bottom:450px;
+    left:100px;
+    height:300px;
+    background-color: rgba(148, 120, 120, 0.43);
+  }
+
+ 

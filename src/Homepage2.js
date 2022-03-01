@@ -9,7 +9,7 @@ import PremadeBowls from "./PremadeBowls";
 import Jewelry from "./Jewelry"
 import HerbalTinctures from "./Herbal"
 import Video from "./Video"
-
+import Top from './Top'
 
 
 const Homepage2 = () => {
@@ -95,7 +95,7 @@ ancestors from Alaska, and the future generations to come.
 <Jewelry />
 <HerbalTinctures />
 <Video />
-    
+<Top />
 </div>
 
           
