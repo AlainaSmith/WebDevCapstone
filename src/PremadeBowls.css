@@ -411,7 +411,7 @@ right:140px;
 
 .thinLineHerbal{
   background-color: gray;
-  width: 80%;
+  width: 77%;
 height: 1px;
 position:relative;
 top:10px;
@@ -427,6 +427,8 @@ right:175px;
   left:100px;
   font-size: 30px;
   font-weight: 300;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #herbal{
   position:relative;
@@ -439,9 +441,11 @@ white-space: nowrap;
 
 #pinkTinc1:hover{
   box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+  
 }
 #pinkTinc2:hover{
   box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+
 }
 #pinkTinc3:hover{
   box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
@@ -456,6 +460,7 @@ white-space: nowrap;
   right:200px;
   height:150px;
   width:150px;
+ 
 }
 
 #reishiPhoto{
@@ -485,7 +490,9 @@ left:40px
   right:140px;
   height:200px;
   width:120px;
-
+z-index:15;
+border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 #pinkTinc2{
@@ -494,6 +501,9 @@ left:40px
   right:80px;
   height:200px;
   width:120px;
+  z-index:15;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 #pinkTinc3{
@@ -502,6 +512,9 @@ left:40px
   right:20px;
   height:200px;
   width:120px;
+  z-index:15;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #pinkTinc4{
   position:relative;
@@ -509,6 +522,9 @@ left:40px
   right:-50px;
   height:200px;
   width:120px;
+  z-index:15;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 #classes{
@@ -529,3 +545,73 @@ position:relative;
 top:60px;
 right:110px;
 }
+
+
+#backPhotoTinc1{
+  
+background-color: rgba(22, 141, 131, 0.212);
+  height: 70px;
+  width:150px;
+   position:relative;
+left:735px;
+top:140px;
+z-index:0;
+  border-radius:6px;
+  box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+}
+#backPhotoTinc2{
+  
+  background-color: rgba(22, 141, 131, 0.212);
+    height: 70px;
+    width:150px;
+     position:relative;
+  left:546px;
+  top:70px;
+    /* z-index:-1; */
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+  }
+  #backPhotoTinc3{
+  
+    background-color: rgba(22, 141, 131, 0.212);
+      height: 70px;
+      width:150px;
+       position:relative;
+    left:367px;
+      /* z-index:-1; */
+      border-radius:6px;
+      box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+    }
+    #backPhotoTinc4{
+  
+      background-color: rgba(22, 141, 131, 0.212);
+        height: 70px;
+        width:150px;
+         position:relative;
+      left:180px;
+      bottom:70px;
+        /* z-index:-1; */
+        border-radius:6px;
+        box-shadow: 1px 1px 1px 1px rgb(170, 167, 167);
+      }
+
+
+      #herbnames{
+        position:relative;
+        top: 10px;
+        color:rgb(70, 64, 64);
+        font-family: roboto;
+        font-size:17px;
+        word-break: break-all;
+        padding:20px;
+      }
+
+      .alltincturesection{
+        margin-top: 70px;
+      }
+
+
+      .allbowls{
+        position:relative;
+        bottom:65px
+      }

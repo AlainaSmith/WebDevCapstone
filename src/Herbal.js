@@ -7,8 +7,8 @@ import './PremadeBowls.css'
 const HerbalTinctures= () => {
     return(
       <div>
-<div id='tinctures' className='woodBowl2'>
-      <p id='herbal'>Herbal Tinctures</p>
+<div id='tinctures' className='alltincturesection'>
+      <p id='herbal'>Herbal / Mushroom Tinctures</p>
         <div className='thinLineHerbal'></div>
   </div>
 
@@ -48,6 +48,12 @@ const HerbalTinctures= () => {
     <img id="bigTinc" src={require('./photos/bigTincture.JPG')} />
     </NavLink> */}
     
+<div className='alltinctures'>
+    <div id='backPhotoTinc1'><p id='herbnames'>2oz <br></br> Chammomile</p></div>
+    <div id='backPhotoTinc2'><p id='herbnames'>2oz <br></br>Dandelion Root</p></div>
+    <div id='backPhotoTinc3'><p id='herbnames'>2oz <br></br> Lemon Balm</p></div>
+    <div id='backPhotoTinc4'><p id='herbnames'>2oz <br></br>Chaga</p></div>
+    </div>
     </div>
     )
 }

@@ -5,9 +5,9 @@ const ProductCard = ({data, addToCart}) => {
 
   return (
     <div className='product-card'>
-      <h3>{data.product_name}</h3>
-      <p>{data.product_description}</p>
-      <button id='addToCart' onClick={() => addToCart(data.product_id)}>{data.product_name}</button>
+      
+      
+      <button id='addToCart' onClick={() => addToCart(data.product_id)}>Add To Cart</button>
 
 
     </div>

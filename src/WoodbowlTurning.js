@@ -5,6 +5,8 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { NavLink } from "react-router-dom";
 import './WoodbowlTurning.css'
 import Products from "./Products";
+import Booking from "./Booking";
+import ProductClasses from "./ProductClasses";
 
 const WoodbowlTurning = () => {
 const userfirstName = window.localStorage.getItem('userfirstName')
@@ -72,8 +74,8 @@ Additional Notes:
 </p>
 </div>
 
-<Products />
-
+{/* <Products /> */}
+<ProductClasses />
         </div>
     )
 }

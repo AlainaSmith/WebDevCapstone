@@ -1,6 +1,10 @@
 
+.allclassstuff{
+  position:relative;
+  bottom:300px;
+}
 .wrapper2 {
-  max-width: 100%;
+  max-width: 200%;
   overflow: hidden;
   position:relative;
   top:600px;
@@ -12,18 +16,17 @@
   display: inline-block;
  
   margin-top:30px;
-  animation: marquee 30s linear infinite;
+  animation: marquee 10s linear infinite
   
 }
 @keyframes marquee2 {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(10, 0, 0);
   }
   100% {
-    transform: translate3d(-210%, 0, 0);
+    transform: translate3d(-180%, 0, 0);
   }
 }
-
 
 
 
@@ -62,25 +65,25 @@ height:320px;
 #uno{
   display: inline-block;
   position:relative;
-  left:20px;
+  left:-130px;
   
 }
 #dos{
   display: inline-block;
   position:relative;
-  left:-70px;
+  left:-250px;
 }
 #tres{
   display: inline-block;
   position:relative;
-  left:-160px;
+  right:370px;
 }
 
 #quatre{
   display: inline-block;
   position:relative;
 bottom:347px;
-left:700px;
+left:460px;
 
 }
 
@@ -89,14 +92,14 @@ left:700px;
   display: inline-block;
   position:relative;
 bottom:349px;
-left:660px;
+left:400px;
 }
 
 #sis{
     display: inline-block;
     position:relative;
 bottom:345px;
-left:640px;
+left:450px;
 }
 
 
@@ -117,6 +120,7 @@ li::before {content: "•"; color: red;
   #classesOff{
     position:relative;
     top:390px;
+    left:65px;
   
   }
 
@@ -129,7 +133,8 @@ li::before {content: "•"; color: red;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
   }
   #inline2{
     display:inline;
@@ -140,7 +145,8 @@ li::before {content: "•"; color: red;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
   }
 
   #inline3{
@@ -152,35 +158,39 @@ li::before {content: "•"; color: red;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
   }
   #inline4{
     display:inline;
     position:relative;
-    right:10px;
+    right:0px;
     font-family: roboto;
     background-color:teal;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
   }
   
 #secondClasses{
   position:relative;
-    top:410px;
+    top:440px;
+    left:60px;
 }
 
 #inline5{
   display:inline;
   position:relative;
-  right:60px;
+  right:50px;
   font-family: roboto;
     background-color:teal;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
 }
 #inline6{
   display:inline;
@@ -191,7 +201,8 @@ li::before {content: "•"; color: red;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
 }
 #inline7{
   display:inline;
@@ -202,10 +213,31 @@ li::before {content: "•"; color: red;
     color:white;
     font-size:19px;
     padding:8px;
-    border-radius:3px;
+    border-radius:6px;
+    box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
 }
 
-
+#inline1:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline2:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline3:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline4:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline5:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline6:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
+#inline7:hover{
+  box-shadow: 2px 2px 2px 2px rgb(109, 103, 103);
+}
 /* .tech-slideshow #one {
     opacity: 0;
     transition: opacity 0.5s ease-out;

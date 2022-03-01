@@ -21,7 +21,7 @@ const Products = ({update, setUpdate}) => {
   }
 
   useEffect(() => {
-    axios.get('http://localhost:3500/api/allProducts')
+    axios.get('http://localhost:3500/api/SmallWalnutBowl')   //I change this endpoint to reflect what item I want displayed on the products page.
     .then((res) => {
       console.log(res.data)
       setData(res.data)
@@ -30,7 +30,7 @@ const Products = ({update, setUpdate}) => {
   
   return (
     <div className='page-container'>
-      <h2>Products Available</h2>
+    
       {data.map((element, index) => {
         return <ProductCard data={element} key={index} addToCart={addToCart}/>
       }) }

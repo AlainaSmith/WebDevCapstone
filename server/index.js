@@ -155,10 +155,18 @@ app.get('/api/userCart/:id', async (req, res) => {
 })
 
 
-app.get('/api/getFromCart', async (req, res) => {
+app.get('/api/SmallWalnutBowl', async (req, res) => {
   let products = await sequelize.query(`
   SELECT * FROM products
   WHERE product_name='Small Walnut Bowl'
+  `)
+  res.status(200).send(products[0])
+})
+
+app.get('/api/WoodBowlTurningClass', async (req, res) => {
+  let products = await sequelize.query(`
+  SELECT * FROM products
+  WHERE product_name='Wood Bowl Turning Class'
   `)
   res.status(200).send(products[0])
 })

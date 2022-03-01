@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 
 const Video = () => {
   return (
-<div>
-  <div id='classes' className='woodBowl2'>
+<div className='allclassstuff'>
+  <div id='classes'>
       <p>Classes</p>
         <div className='thinLineClasses'></div>
 </div>
@@ -23,8 +23,8 @@ const Video = () => {
           
 <div id='secondClasses'>
           <p id='inline7'>Thai cooking with Kat</p>
-          <p id='inline5'>Play guitar with Emil</p>
-          <p id='inline6'>Forage & Ferment with MycoJoe</p>
+          <p id='inline5'>Forage & Ferment w/ MycoJoe</p>
+          <p id='inline6'>Learn guitar with Emil</p>
 </div>
       
  <div className='wrapper2'>
@@ -47,14 +47,16 @@ const Video = () => {
   <div id="quatre">
        <iframe id='four' className='marquee2'  src="https://player.vimeo.com/video/682658632?h=dddaf16026&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
   </div>
+ 
+  <div id='sis'>
+      <iframe id='six'className='marquee2' src="https://player.vimeo.com/video/682650204?h=4b20468ba1&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
   <div id='cinc'>
 <iframe id='five' className='marquee2' src="https://player.vimeo.com/video/683071831?h=04993356a4&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-  <div id='sis'>
-      <iframe id='six'className='marquee2' src="https://player.vimeo.com/video/682650204?h=4b20468ba1&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-  </div>
+  
 
   </div>
 

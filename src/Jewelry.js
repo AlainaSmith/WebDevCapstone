@@ -6,8 +6,8 @@ import './Jewelry.css'
 const Jewelry = () => {
     
 return(
-<div>
-  <div id='woodBowls' className='woodBowl2'>
+<div className='alljewls'>
+  <div id='woodBowls'>
       <p id='jewl'>Jewelry</p>
         <div className='thinLineJewl'></div>
   </div>

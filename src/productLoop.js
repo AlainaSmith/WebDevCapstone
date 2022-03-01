@@ -16,7 +16,8 @@ const ProductLoop = ({data, removeItem}) => {
 
     return(
         <div>
-            <h3>{data.product_name}</h3>
+            <h2>{data.product_name}</h2>
+            <h2>{data.product_description}</h2>
             <button onClick={() => removeItem(data.cart_id)}>Remove</button>
         </div>
     )

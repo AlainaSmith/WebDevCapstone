@@ -6,7 +6,7 @@ import './PremadeBowls.css'
 const PremadeBowls = () => {
     
 return(
-<div>
+<div className='allbowls'>
   <div id='woodBowls' className='woodBowl2'>
       <p id='woodText'>Wood bowls</p>
         <div className='thinLine'></div>
@@ -16,7 +16,7 @@ return(
 <div className='backPhoto'><p id='Walnut'>Walnut</p></div>
     <figure class='gallery__item gallery__item--1'>
   <NavLink exact to='/SmallWalnutBowl'>
-    <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/>
+    {/* <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/> */}
     </NavLink>
     </figure>
 
@@ -27,7 +27,7 @@ return(
 
 <div className='backPhoto3'><p id='Walnut'>Walnut</p></div> 
     <figure class="gallery__item gallery__item--3">
-    <img id="woodBowl"  src={require('./photos/IMG_7907.PNG')} class="gallery__img" alt="Image 3"/>
+    {/* <img id="woodBowl"  src={require('./photos/IMG_7907.PNG')} class="gallery__img" alt="Image 3"/> */}
     </figure>
 
 <div className='backPhoto4'><p id='Walnut'>Red Cedar</p></div>
@@ -37,7 +37,7 @@ return(
 
 <div className='backPhoto5'><p id='Walnut'>Maple</p></div>
     <figure class="gallery__item gallery__item--5">
-    <img id="woodBowl5"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/>
+    {/* <img id="woodBowl5"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/> */}
     </figure>
 
 {/* <div className='backPhoto6'><p id='Walnut'>Osage Orange</p></div>
