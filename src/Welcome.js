@@ -57,35 +57,49 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 
 <p id='welcome'> Welcome Back, {userfirstName}! </p>
           
-<div id='datesWelcome'>
-<form className='rewards'>
-  <div id='text'>
-<h3>Reward Status</h3>
-<p>{infoRewards}--</p>
-<h3>Classes Signed up for</h3>
-<p>{infoClasses}</p>
-<h3>Past Purchases</h3>
-<p>{infoPurchases}</p>
+<div className='rewards'>
 
-<h3>Where are my proceeds going?</h3>
+  <div id='text'>
+
+<h5>Reward Status:</h5>
+<p id='infoRewards'>{infoRewards}</p>
+
+<h5>Classes Signed up for:</h5>
+<p id='infoClasses'>{infoClasses}</p>
+
+<h5>Past Purchases</h5>
+<p id='infoPurchases'>{infoPurchases}</p>
+
+<h5>Where are my proceeds going?</h5>
 <p>---------</p>
+
 </div>
+
+
+</div>
+<div id='datesWelcome'>
 <div id='points'>
-<p>25 pts:Free shipping</p>
-<p>
-50 pts:15% off
+<p className='underlinePoints'>25 pts</p>
+<p> Free shipping</p>
+<p className='underlinePoints'>
+50 pts
 </p>
-<p>
-75 pts:20% off
+<p>15% off</p>
+<p className='underlinePoints'>
+75 pts
 </p>
-<p>
-100 pts:Wood spoon w/ purchase
+<p>20% off</p>
+<p className='underlinePoints'>
+100 pts
 </p>
-<p>
-250 pts:Free class of choice or40% off!
+<p>Wood spoon w/ purchase</p>
+<p className='underlinePoints'>
+250 pts
 </p>
+<p>Free class of choice or 40% off!</p>
 </div>
-</form>
+
+<p id='redeem'>*Redeem Rewards at Checkout</p>
 </div>
 
         </div>

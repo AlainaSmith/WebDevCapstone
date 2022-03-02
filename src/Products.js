@@ -16,7 +16,8 @@ const Products = ({update, setUpdate}) => {
     axios.post('http://localhost:3500/api/addToCart', object)
     .then((res) => {
       console.log(res.data)
-      setUpdate(++update)
+      // setUpdate(++update)
+      alert("Bowl Added To Cart")
     })
   }
 

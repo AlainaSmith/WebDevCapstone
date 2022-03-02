@@ -56,7 +56,9 @@ return(
 {/* <NavLink id='userWood' exact to='/Welcome'>
 <p className='userWoodBowl'>Hi, {userfirstName}!</p>
 </NavLink> */}
+
 <ProductClasses />
+
 <p id='woodturnclass'>Wood Bowl Turning Class</p>
 <div id='dates'>
 <p id='datesandtimes'>Dates & Times</p>

@@ -10,45 +10,73 @@
 }
 
 #datesWelcome{
-
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: rgba(110, 112, 110, 0.566);
-        height: 400px;
-        width:800px;
-        margin:auto;
-      
- 
+        
+        background-color: rgba(110, 112, 110, 0.486);
+        height: 340px;
+        width:260px;
+        position: relative;
+        left:750px;
+        bottom:1000px;
+        box-shadow: 2px 2px 2px 2px rgba(122, 118, 118, 0.198);
+        border-radius: 4px;
+        
+}
+#points{
+    padding:20px;
+    font-family: roboto;
+    }
+.underlinePoints{
+     text-decoration: underline;
+     line-height: 2;
+     font-family: roboto;
+     font-size:19px;
+     font-weight: 600;
 }
 
+#redeem{
+    position:relative;
+    right:0px;
+    top:44px;
+    color:rgb(224, 210, 210);
+    font-size: 17px;
+    font-family: roboto;
+}
 .rewards{
     color:rgb(56, 54, 54);
-    background:rgb(213, 216, 216);
-    height:300px;
+    background:rgba(213, 216, 216, 0.609);
+    height:400px;
     width:700px;
     margin-right: auto;
     border-radius:30px;
     margin:30px;
     position:relative;
-    bottom:400px;
+    bottom:600px;
+    left:340px
 
+}
+
+h5{
+    margin:10px
 }
 #text{
 position:relative;
 right:180px;
+top:60px
+
 }
-#points{
-position:relative;
-left:140px;
-bottom:100px;
-}
+
 /* 
-#sidebar{
-    display: flex;
-   
+#infoRewards{
+position: relative;
+left:200px;
 }
-#sidebar3{
-    display: flex;
-   
+
+#infoClasses{
+    position: relative;
+    left:200px;
+}
+
+#infoPurchases{
+    position: relative;
+    left:200px;
 } */

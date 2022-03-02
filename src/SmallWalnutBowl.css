@@ -38,6 +38,21 @@
     background-color:white
 }
 
+
+/* .user{
+    position:relative;
+    top:-4px;
+    height: 30px;
+    width:30px;
+    color:rgb(233, 58, 58);
+    left:600px
+}
+.user:hover{
+    color:rgb(107, 95, 95)
+} */
+
+
+
 #des{
     color:white;
     position:relative;

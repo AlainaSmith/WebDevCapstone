@@ -21,8 +21,8 @@ return(
 <div>
  <div className = 'backgroundContainer'> 
   <div className='backgroundPhoto'>
-                <img id="back" height="1300px" width="1080px" src={require('./photos/back.jpeg')} />
-                <img id="logo" height="290px" width="290px" src={require('./photos/logo.png')} />
+                <img id="back" height="1300px" width="1080px" src="https://github.com/AlainaSmith/WebDevCapstone/blob/main/src/photos/back.jpeg?raw=true" />
+                <img id="logo" height="290px" width="290px" src="https://github.com/AlainaSmith/WebDevCapstone/blob/main/src/photos/logo.png?raw=true" />
             </div>
 
 
@@ -34,6 +34,7 @@ return(
         <a id='jewelry' href="#jewelryLocator">Jewelry</a>
         <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
         <a id='classesId' href="#classes">Classes</a>
+        <a id='classesId' href="#contact">Contact</a>
         <NavLink id='userAccountIcon' exact to='/userAccount'>
         <FaUserCircle/>
         </NavLink>
@@ -42,7 +43,7 @@ return(
             <ShoppingCartIcon />{" "}
         </Badge>
         </NavLink>
-        <a id='classesId' href="#contact">Contact</a>
+       
 
 
         {/* <NavLink exact to='/Classes'>
@@ -103,8 +104,17 @@ ancestors from Alaska, and the future generations to come.
 <Jewelry />
 <HerbalTinctures />
 <Video />
-<Top />
+
+<div className='bottomHeader' id='secondHeader'>
+<p>Copyright © 2022, Hopes&Trees Collective</p>
+<p>Address: 333 Hopes & Trees Avenue, Follow the yellow brick road 99654</p>
+<p>Shop Hours: 9am-5pm | Monday-Friday</p>
+
 </div>
+</div>
+<Top />
+
+
 <p>Photo by <a href="https://unsplash.com/@filipz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Filip Zrnzević</a> on <a href="https://unsplash.com/s/photos/trees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>
           

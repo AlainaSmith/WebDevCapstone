@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import SmallWalnutBowl from './SmallWalnutBowl'
 import ProductCard from './ProductCard'
-
+import './CartCss.css'
 
 
 const ProductClasses = ({update, setUpdate}) => {
@@ -30,13 +30,15 @@ const ProductClasses = ({update, setUpdate}) => {
       })
     }, [])
     
+   
+
     return (
       <div className='page-container'>
-       
+       <div className='addtocartbuttonclass'>
         {data.map((element, index) => {
           return <ProductCard data={element} key={index} addToCart={addToCart}/>
         }) }
-  
+    </div>
       </div>
   
     )

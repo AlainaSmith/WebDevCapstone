@@ -12,6 +12,26 @@ left:160px;
 } */
 
 #addToCart{
-  z-index:60
+  z-index:60;
+  background-color: rgb(212, 192, 192);
+ 
+}
+#addToCart:hover{
+  box-shadow: 1px 1px 1px 1px black;
+  cursor:pointer
+}
+
+.addtocartbuttonclass{
+  background-color: rgb(148, 133, 133);
+  height:20px;
+  width:80px;
+  position: relative;
+  left:827px;
+  bottom:70px;
+  z-index:3;
+  padding:3px;
+  border-radius:7px;
+}
+.addtocartbuttonclass:hover{
 }
 

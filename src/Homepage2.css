@@ -216,6 +216,21 @@ width: 1065px;
     left:170px;
   }
 
+  .bottomHeader{
+    height: 200px;
+    width: 1085px;
+  }
+  #secondHeader{
+  
+      background-color: rgb(103, 126, 117);
+      position:relative;
+     top:40px;
+  }
+
+  #secondHeader{
+    color:white;
+    line-height: 2;
+  }
   #woodbowlLocator{
     height:100px;
     position:relative;
