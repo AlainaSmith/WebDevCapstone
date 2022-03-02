@@ -16,7 +16,7 @@ return(
 <div className='backPhoto'><p id='Walnut'>Walnut</p></div>
     <figure class='gallery__item gallery__item--1'>
   <NavLink exact to='/SmallWalnutBowl'>
-    {/* <img id="woodBowl" src={require('./photos/IMG_7910.PNG')} class="gallery__img" alt="Image 1"/> */}
+    <img id="woodBowl" src={require('./photos/IMG_7910.jpg')} class="gallery__img" alt="Image 1"/>
     </NavLink>
     </figure>
 
@@ -27,7 +27,7 @@ return(
 
 <div className='backPhoto3'><p id='Walnut'>Walnut</p></div> 
     <figure class="gallery__item gallery__item--3">
-    {/* <img id="woodBowl"  src={require('./photos/IMG_7907.PNG')} class="gallery__img" alt="Image 3"/> */}
+    <img id="woodBowl"  src={require('./photos/IMG_7907.jpg')} class="gallery__img" alt="Image 3"/>
     </figure>
 
 <div className='backPhoto4'><p id='Walnut'>Red Cedar</p></div>
@@ -37,25 +37,25 @@ return(
 
 <div className='backPhoto5'><p id='Walnut'>Maple</p></div>
     <figure class="gallery__item gallery__item--5">
-    {/* <img id="woodBowl5"src={require('./photos/IMG_7898.PNG')} class="gallery__img" alt="Image 5"/> */}
+    <img id="woodBowl5"src={require('./photos/IMG_7898.jpg')} class="gallery__img" alt="Image 5"/>
+    </figure>
+
+<div className='backPhoto6'><p id='Walnut'>Osage Orange</p></div>
+    <figure class="gallery__item gallery__item--6">
+    <img id="woodBowl"src={require('./photos/first.JPG')} class="gallery__img" alt="Image 6"/>
+    </figure>
+
+<div className='backPhoto7'><p id='Walnut'>Red Cedar</p></div>
+    <figure class="gallery__item gallery__item--7">
+    {/* <img id="woodBowl"src={require('./photos/IMG_7905.jpg')} class="gallery__img" alt="Image 7"/> */}
     </figure>
 
 {/* <div className='backPhoto6'><p id='Walnut'>Osage Orange</p></div>
     <figure class="gallery__item gallery__item--6">
-    <img id="woodBowl"src={require('./photos/IMG_7909.jpg')} class="gallery__img" alt="Image 6"/>
-    </figure> */}
-
-{/* <div className='backPhoto7'><p id='Walnut'>Padauk</p></div>
-    <figure class="gallery__item gallery__item--7">
-    <img id="woodBowl"src={require('./photos/IMG_7905.PNG')} class="gallery__img" alt="Image 7"/>
-    </figure> */}
-
-<div className='backPhoto6'><p id='Walnut'>Osage Orange</p></div>
-    <figure class="gallery__item gallery__item--6">
     <img id="woodBowl6"src={require('./photos/first.JPG')} class="gallery__img" alt="Image 6"/>
-    </figure>
+    </figure> */}
 
-<div className='backPhoto7'><p id='Walnut'>Red Cedar</p></div>
+
     <figure class="gallery__item gallery__item--7">
     <img id="woodBowl7"src={require('./photos/FE7E9916-D897-4E65-8022-2001AFA3B22F (1).JPG')} class="gallery__img" alt="Image 7"/>
     </figure>

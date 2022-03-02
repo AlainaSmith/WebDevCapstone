@@ -17,15 +17,26 @@ return(
 
 <div className = 'backgroundContainerWoodTurn'> 
         <div className='backgroundPhoto'>
-            <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+            <img id="back" height="740px" width="900px" src={require('./photos/back.jpeg')} />
         </div>
         <div id='fixed'>
         <div className='greyHeader'>
         <div id='options'>
-        <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
-        <a id='jewelry' href="#jewelryLocator">Jewelry</a>
-        <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
-        <a id='classesId' href="#classes">Classes</a>
+        <a id='woodbowl'>Wood bowls</a>
+        <a id='jewelry'>Jewelry</a>
+        <a id='herbalTinctures'>Herbal Tinctures</a>
+        
+        <div className='dropdown'>
+          <span><div id='classesId'>Classes</div></span>
+          
+          <div className='dropdown-content'>
+            <p className='itemchoice'>Tincture Making</p>
+            <p className='itemchoice'>Spoon Carving</p>
+            <p className='itemchoice'>Ferment & Forage</p>
+            <p className='itemchoice'>Craft Earrings</p>
+          </div>
+          </div>
+
         <NavLink id='userAccountIcon' exact to='/userAccount'>
         <FaUserCircle/>
         </NavLink>
@@ -42,40 +53,42 @@ return(
 </NavLink>
 </div>
 
-<NavLink id='userWood' exact to='/Welcome'>
+{/* <NavLink id='userWood' exact to='/Welcome'>
 <p className='userWoodBowl'>Hi, {userfirstName}!</p>
-
-</NavLink>
-
+</NavLink> */}
+<ProductClasses />
+<p id='woodturnclass'>Wood Bowl Turning Class</p>
 <div id='dates'>
-<p>Dates & Times</p>
+<p id='datesandtimes'>Dates & Times</p>
 <form className='classBooking'>
-March 4, 2022<input className='radio'type = "radio" name = "phone" value ="bowl"/>
-March 21, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
-March 4, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
-March 21, 2022<input className='radio' type = "radio" name = "phone" value ="bowl"/>
-<button>Add to Cart</button>
+<p id='wooddates'>March 4, 2022<br></br>12:00pm-5:00pm</p><input className='radio'type = "radio" name = "phone" value ="bowl"/>
+<p id='wooddates'>March 21, 2022<br></br>12:00pm-5:00pm</p><input className='radio' type = "radio" name = "phone" value ="bowl"/>
+<p id='wooddates'>April 5, 2022<br></br>12:00pm-5:00pm</p><input className='radio' type = "radio" name = "phone" value ="bowl"/>
+<p id='wooddates'>April 20, 2022<br></br>12:00pm-5:00pm</p><input className='radio' type = "radio" name = "phone" value ="bowl"/>
+<p id='wooddates'>May 10, 2022<br></br>12:00pm-5:00pm</p><input className='radio' type = "radio" name = "phone" value ="bowl"/>
+
 </form>
 </div>
 
 <div className='description'>
+<p id='desc'>Description </p>
 <p>
-Description: This is a great class to advance your skills to bowl turning. 
+This is a great class to advance your skills to bowl turning. 
 The course is designed for the beginner to intermediate turner who wants to get a good foundation in turning bowls. 
 Proper tools, blank selection, chucking methods, and form will be covered. Students will leave with their own finished bowl.
 </p>
+<p id='tuition'>
 Tuition: $80.00
-<p>
-What to bring:
-</p>
-
-<p>
-Additional Notes:
 </p>
 </div>
 
+<div className='woddpage'>
+<p id='make1'>*For any questions regarding the class please call (888) - 888 - 8888</p>
+          {/* <p id='make2'>Craft your own earrings</p>
+          <p id='make3'>Carve a wood spoon</p> */}
+</div>
 {/* <Products /> */}
-<ProductClasses />
+
         </div>
     )
 }

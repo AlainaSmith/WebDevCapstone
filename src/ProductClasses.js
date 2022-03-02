@@ -17,7 +17,8 @@ const ProductClasses = ({update, setUpdate}) => {
       axios.post('http://localhost:3500/api/addToCart', object)
       .then((res) => {
         console.log(res.data)
-        setUpdate(++update)
+        // setUpdate(++update)
+        alert("Class added to Cart")
       })
     }
   
@@ -31,7 +32,7 @@ const ProductClasses = ({update, setUpdate}) => {
     
     return (
       <div className='page-container'>
-        <h2>Classes Available</h2>
+       
         {data.map((element, index) => {
           return <ProductCard data={element} key={index} addToCart={addToCart}/>
         }) }

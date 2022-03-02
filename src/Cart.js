@@ -56,7 +56,7 @@ console.log(userfirstName)
 return(
    <div className = 'backgroundContainerCart'> 
         <div className='backgroundPhoto'>
-            <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+            <img id="back" height="740px" width="900px" src={require('./photos/back.jpeg')} />
         </div>
         <div id='fixed'>
         <div className='greyHeader'>

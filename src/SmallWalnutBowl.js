@@ -24,7 +24,7 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 return(
 <div className = 'backgroundContainerWalnut' id='userContainer'> 
   <div className='backgroundPhoto'>
-    <img id="back" height="740px" width="900px" src={require('./photos/back.jpg')} />
+    <img id="back" height="740px" width="900px" src={require('./photos/back.jpeg')} />
 </div>
  <div id='fixed'>
  <div className='greyHeader'>
@@ -59,9 +59,9 @@ return(
 </NavLink> */}
 
             <p id='walnutBowl'>Small Walnut Bowl</p>
-            {/* <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7910.PNG')} /> */}
-            {/* <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7914.PNG')} />
-            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7912.PNG')} /> */}
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7910.jpg')} /> *
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7914.jpg')} />
+            <img id="bowl1" height="200px" width="200px" src={require('./photos/IMG_7912.jpg')} />
         <form>
             <h3 id='des'>$20</h3>
         

@@ -20,7 +20,7 @@ return(
 <div>
  <div className = 'backgroundContainer'> 
   <div className='backgroundPhoto'>
-                <img id="back" height="1300px" width="1080px" src={require('./photos/back.jpg')} />
+                <img id="back" height="1300px" width="1080px" src={require('./photos/back.jpeg')} />
                 <img id="logo" height="290px" width="290px" src={require('./photos/logo.png')} />
             </div>
 
@@ -97,7 +97,8 @@ ancestors from Alaska, and the future generations to come.
 <Video />
 <Top />
 </div>
-
+<p>Photo by <a href="https://unsplash.com/@filipz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Filip Zrnzević</a> on <a href="https://unsplash.com/s/photos/trees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </p>
           
 </div>
     )

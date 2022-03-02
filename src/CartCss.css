@@ -1,4 +1,13 @@
 #addToCart{
-  margin:auto
+
+  position: relative;
+
+  z-index:10;
+bottom:70px;
+left:160px;
+  background-color: rgb(197, 191, 191);
+  height:40px;
+  width:100px;
+  border-radius: 9px;
 }
 
