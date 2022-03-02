@@ -18,7 +18,7 @@ const ProductClasses = ({update, setUpdate}) => {
       .then((res) => {
         console.log(res.data)
         // setUpdate(++update)
-        alert("Class added to Cart")
+        alert("Class Added To Cart")
       })
     }
   

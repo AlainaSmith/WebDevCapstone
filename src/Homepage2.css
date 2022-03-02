@@ -193,14 +193,22 @@ width: 1065px;
     bottom:430px;
     left:170px;
   }
-
+#instagram{
+  color:white;
+  font-size: 25px;
+  position:relative;
+  right:2px;
+}
   #two{
     background-color: rgba(54, 83, 72, 0.877);
     position:relative;
     bottom:435px;
     left:170px;
   }
-
+#facebook{
+  color:white;
+  font-size:25px
+}
   #three{
     background-color: rgb(103, 126, 117);
     position:relative;
@@ -211,7 +219,7 @@ width: 1065px;
   #woodbowlLocator{
     height:100px;
     position:relative;
-    bottom:445px;
+    bottom:517px;
     left:170px;
     background-color:rgb(88, 38, 38);
   }

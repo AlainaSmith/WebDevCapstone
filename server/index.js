@@ -146,7 +146,7 @@ app.get('/api/allProducts', async (req, res) => {
 app.get('/api/userCart/:id', async (req, res) => {
   const {id} = req.params
   const myCart = await sequelize.query(`
-    SELECT c.cart_id, p.product_name, p.product_description FROM cart c
+    SELECT c.cart_id, p.product_name, p.product_description, p.product_price, p.product_total FROM cart c
     JOIN products p
     ON c.product_id = p.product_id
     WHERE c.user_id = ${id}
@@ -187,17 +187,7 @@ app.post('/api/addToCart', async (req, res) => {
 })
 
 
-// app.post('/api/getFromCart', async (req, res) => {
-//   const {user_ID, product_ID} = req.body
-//   await sequelize.query(`
-//     INSERT INTO cart (user_id, product_id)
-//     VALUES (
-//       ${user_ID},
-//       ${product_ID}
-//     )
-//   `)
-//   res.status(200).send("Item added to cart")
-// })
+
 
 
 app.delete('/api/userCart/:id', async (req, res) => {
@@ -233,4 +223,18 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 //   `).catch((err) => console.log(err))
 //   // if(subscribeUser === )
   
+// })
+
+
+
+// app.post('/api/getFromCart', async (req, res) => {
+//   const {user_ID, product_ID} = req.body
+//   await sequelize.query(`
+//     INSERT INTO cart (user_id, product_id)
+//     VALUES (
+//       ${user_ID},
+//       ${product_ID}
+//     )
+//   `)
+//   res.status(200).send("Item added to cart")
 // })

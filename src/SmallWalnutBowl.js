@@ -66,9 +66,11 @@ return(
             <h3 id='des'>$20</h3>
         
         </form>
-        <p id='des'>Small walnut bowl, finished with mineral oil and wax. </p>
+        {/* <p id='des'>Small walnut bowl, finished with mineral oil and wax. </p>
     <p id='directions'>Directions for care:</p>
     <p id='directions'>Hand washing is the best way to care for your woodenware. <br></br>Never soak them in water for too long to prevent splitting or cracking. <br></br>Use warm water and mild soap to wash the surface</p>
+ 
+  */}
  </div>
 
 

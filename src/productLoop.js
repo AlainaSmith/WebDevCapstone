@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Cart from "./Cart";
 // import ItemCard from "./ItemCard";
-
+import './productLoop.css'
 
 const ProductLoop = ({data, removeItem}) => {
 
@@ -16,9 +16,11 @@ const ProductLoop = ({data, removeItem}) => {
 
     return(
         <div>
-            <h2>{data.product_name}</h2>
-            <h2>{data.product_description}</h2>
-            <button onClick={() => removeItem(data.cart_id)}>Remove</button>
+            <div id='productName'><p>{data.product_name}</p></div>
+            <div id='productDescription'><p>{data.product_description}</p></div>
+            <div id='productPrice'><p>{data.product_price}</p></div>
+            <div id='productTotal'><p>{data.product_total}</p></div>
+            <button id='removeButton' onClick={() => removeItem(data.cart_id)}>Remove</button>
         </div>
     )
 }

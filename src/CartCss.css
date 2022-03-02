@@ -1,4 +1,4 @@
-#addToCart{
+/* #addToCart{
 
   position: relative;
 
@@ -9,5 +9,9 @@ left:160px;
   height:40px;
   width:100px;
   border-radius: 9px;
+} */
+
+#addToCart{
+  z-index:60
 }
 

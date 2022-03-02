@@ -2,6 +2,7 @@ import React from "react";
 import './Homepage2.css'
 import {FaUserCircle} from 'react-icons/fa'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import {FaFacebook} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { NavLink } from "react-router-dom";
@@ -81,8 +82,15 @@ ancestors from Alaska, and the future generations to come.
     </p>
 </div>
 
-<div className='gradientBars' id='one'></div>
-<div className='gradientBars' id='two'></div>
+<div className='gradientBars' id='one'>
+<div id='instagram'><AiOutlineInstagram /> </div>
+</div>
+
+<div className='gradientBars' id='two'>
+<div id='facebook'><FaFacebook /></div>
+</div>
+
+
 <div className='gradientBars' id='three'></div>
 <div id='woodbowlLocator' className='gradientBars'></div>
 <div id='jewelryLocator' className='gradientBars'></div>

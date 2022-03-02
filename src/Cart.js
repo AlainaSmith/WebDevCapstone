@@ -86,10 +86,30 @@ return(
       {data.map((element, index) => {
         return <ProductLoop data={element} key={index} removeItem={removeItem}/>
       }) }
- 
+
+
+<div className='greyBack'>
+    <p id='products'>Products</p>
+    <p id='price'>Price</p>
+    <div id='rewards'>
+    <p>Redeem Rewards</p>
+    </div>     
+</div>      
+
+<div className='greyCheckoutBox'>
+    <p id='total'>Total:</p>
+    <div id='checkout'><p>Checkout</p>
+    </div>
+</div>
+
+
+
+
  </div>
 
-       
+
+
+
         </div>
     )
 }
