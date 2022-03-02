@@ -54,12 +54,14 @@
 
 
 #des{
-    color:white;
+    color:rgb(248, 221, 221);
     position:relative;
-    bottom:40px;
+    bottom:70px;
+    line-height: 2;
 }
 
 #directions{
     color: white;
-    
+    position:relative;
+    top:40px
 }

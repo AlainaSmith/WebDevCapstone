@@ -183,7 +183,7 @@ color:black;
 
   .gradientBars{
 height: 50px;
-width: 1065px;
+width: 1060px;
 
   }
 
@@ -191,7 +191,9 @@ width: 1065px;
     background-color: rgba(42, 73, 61, 0.493);
     position:relative;
     bottom:430px;
-    left:170px;
+    left:172px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
   }
 #instagram{
   color:white;
@@ -203,7 +205,7 @@ width: 1065px;
     background-color: rgba(54, 83, 72, 0.877);
     position:relative;
     bottom:435px;
-    left:170px;
+    left:172px;
   }
 #facebook{
   color:white;
@@ -213,7 +215,7 @@ width: 1065px;
     background-color: rgb(103, 126, 117);
     position:relative;
     bottom:447px;
-    left:170px;
+    left:172px;
   }
 
   .bottomHeader{
@@ -233,18 +235,38 @@ width: 1065px;
   }
   #woodbowlLocator{
     height:100px;
+    width:60px;
     position:relative;
     bottom:517px;
-    left:170px;
+    left:179px;
     background-color:rgb(88, 38, 38);
   }
   #jewelryLocator{
     height:100px;
     position:relative;
     bottom:-136px;
-    left:170px;
+    left:179px;
     background-color:rgb(88, 38, 38);
+    width:10px;
   
+  }
+
+  #tinctureLocator{
+    height:100px;
+    position:relative;
+   top:825px;
+    left:179px;
+    background-color:rgb(88, 38, 38);
+    width:10px;
+  }
+
+  #classesLocator{
+    height:100px;
+    position:relative;
+   top:1280px;
+    left:179px;
+    background-color:rgb(88, 38, 38);
+    width:10px;
   }
   /* #four{
     background-color: rgb(107, 124, 118);
@@ -256,11 +278,12 @@ width: 1065px;
 
   .whiteContainer{
       height: 3000px;
-      width: 1085px;
+      width: 1080px;
       background: rgb(255, 231, 231);
       position: relative;
       bottom:3635px;
-      margin:auto
+      margin:auto;
+      right:1px
   }
 
   #fixed{

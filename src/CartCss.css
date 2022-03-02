@@ -14,20 +14,25 @@ left:160px;
 #addToCart{
   z-index:60;
   background-color: rgb(212, 192, 192);
- 
+  font-family: ariel;
+  font-size: 16px;
+ height:30px;
+ width:100px;
+ position:relative;
+ bottom: 70px;
 }
 #addToCart:hover{
-  box-shadow: 1px 1px 1px 1px black;
+ background-color: rgb(158, 157, 157);
   cursor:pointer
 }
 
 .addtocartbuttonclass{
-  background-color: rgb(148, 133, 133);
+
   height:20px;
   width:80px;
   position: relative;
-  left:827px;
-  bottom:70px;
+  left:813px;
+  bottom:10px;
   z-index:3;
   padding:3px;
   border-radius:7px;

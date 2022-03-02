@@ -109,10 +109,10 @@ left:450px;
   top:300px;
 }
 
-
+/* 
 li::before {content: "•"; color: red;
   display: inline-block; width: 1em;
-  margin-left: -1em}
+  margin-left: -1em} */
 
 
 
@@ -129,8 +129,8 @@ li::before {content: "•"; color: red;
     position:relative;
     right:100px;
     font-family: roboto;
-    background-color:teal;
-    color:white;
+    color:rgb(70, 64, 64);
+    background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;
@@ -141,12 +141,13 @@ li::before {content: "•"; color: red;
     position:relative;
     right:60px;
     font-family: roboto;
-    background-color:teal;
-    color:white;
     font-size:19px;
     padding:8px;
     border-radius:6px;
     box-shadow: 1px 1px 1px 1px rgb(109, 103, 103);
+    color:rgb(70, 64, 64);
+    background-color: rgba(22, 141, 131, 0.212);
+
   }
 
   #inline3{
@@ -154,8 +155,8 @@ li::before {content: "•"; color: red;
     position:relative;
     right:30px;
     font-family: roboto;
-    background-color:teal;
-    color:white;
+    color:rgb(70, 64, 64);
+    background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;
@@ -166,8 +167,8 @@ li::before {content: "•"; color: red;
     position:relative;
     right:0px;
     font-family: roboto;
-    background-color:teal;
-    color:white;
+    color:rgb(70, 64, 64);
+    background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;
@@ -185,8 +186,8 @@ li::before {content: "•"; color: red;
   position:relative;
   right:50px;
   font-family: roboto;
-    background-color:teal;
-    color:white;
+  color:rgb(70, 64, 64);
+  background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;
@@ -197,8 +198,8 @@ li::before {content: "•"; color: red;
   position:relative;
   right:10px;
   font-family: roboto;
-    background-color:teal;
-    color:white;
+  color:rgb(70, 64, 64);
+  background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;
@@ -209,8 +210,8 @@ li::before {content: "•"; color: red;
   position:relative;
   right:90px;
   font-family: roboto;
-    background-color:teal;
-    color:white;
+  color:rgb(70, 64, 64);
+  background-color: rgba(22, 141, 131, 0.212);
     font-size:19px;
     padding:8px;
     border-radius:6px;

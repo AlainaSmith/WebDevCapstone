@@ -11,23 +11,10 @@
     background-color: rgba(156, 126, 155, 0.336);
    position:relative;
    bottom:4660px;
-   left:1100px;
+   left:1090px;
    z-index:6
-
 }
-
-
-.link{
-    background-image: linear-gradient(#ff2f97, #ff2f97);
-    background-repeat: no-repeat;
-    background-size: 0% 10%;
-    background-position-x: right;
+.top:hover{
+    background-color: rgb(204, 177, 181);
     
-    transition: background-size 500ms
-}
-
-.link:hover{
-    background-size: 14% 100%;
-    background-position-x: left;
-    z-index:10
 }

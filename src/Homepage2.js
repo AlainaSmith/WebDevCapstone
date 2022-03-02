@@ -32,8 +32,8 @@ return(
     
         <a id='woodbowl' href="#woodbowlLocator">Wood bowls</a>
         <a id='jewelry' href="#jewelryLocator">Jewelry</a>
-        <a id='herbalTinctures' href="#tinctures">Herbal Tinctures</a>
-        <a id='classesId' href="#classes">Classes</a>
+        <a id='herbalTinctures' href="#tinctureLocator">Herbal Tinctures</a>
+        <a id='classesId' href="#classesLocator">Classes</a>
         <a id='classesId' href="#contact">Contact</a>
         <NavLink id='userAccountIcon' exact to='/userAccount'>
         <FaUserCircle/>
@@ -95,7 +95,8 @@ ancestors from Alaska, and the future generations to come.
 <div className='gradientBars' id='three'></div>
 <div id='woodbowlLocator' className='gradientBars'></div>
 <div id='jewelryLocator' className='gradientBars'></div>
-
+<div id='tinctureLocator' className='gradientBars'></div>
+<div id='classesLocator' className='gradientBars'></div>
 {/* <div className='gradientBars' id='four'></div> */}
 </div>
 

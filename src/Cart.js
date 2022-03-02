@@ -53,6 +53,11 @@ console.log(userfirstName)
     getFromCart()
 }, [update])
 
+
+
+const handleCheckout = () => {
+    alert("	Qaĝaasakung! Thank you for your support, we appreciate you!")
+}
 return(
    <div className = 'backgroundContainerCart'> 
         <div className='backgroundPhoto'>
@@ -98,8 +103,8 @@ return(
 
 <div className='greyCheckoutBox'>
     <p id='total'>Total:</p>
-    <div id='checkout'><p>Checkout</p>
-    </div>
+    <button id='checkout' onClick={handleCheckout}>Checkout</button>
+  
 </div>
 
 
