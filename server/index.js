@@ -25,6 +25,9 @@ app.use(cors());
 app.use(express.static(path.resolve(__dirname, "../build")))
 
 //Put endpoints here
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicPath, 'index.html'));
+});
 
 
 app.post('/seed', seed) 
