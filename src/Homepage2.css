@@ -1,4 +1,6 @@
-
+.wholething{
+  height:10px
+}
  #userAccountIcon{
   color: black;
   position:relative;
@@ -25,14 +27,13 @@ top:10px;
 .backgroundPhoto{
     display:flex;
     justify-content: center;
-  
-  
+
 }
 #back{
     margin:20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.438);
+    box-shadow: 4px 4px 4px 2px rgba(31, 30, 30, 0.438);
 }
 
 .options{
@@ -127,16 +128,16 @@ left:10px
 color:black;
   font-size: 22px;
   font-family: roboto;
-  font-style: italic;
+
   word-spacing: 10%;
 }
 #userHomepage:hover{
-  color:rgb(60, 133, 133)
+  color:rgb(60, 133, 133);
 }
 
 #aboutContainer{
     padding:17px;
-    height: 120px;
+    height: 140px;
     width: 800px;
     background-color: rgba(255, 255, 255, 0.212);
     position: relative;
@@ -144,10 +145,23 @@ color:black;
     margin:auto;
     color:rgb(255, 255, 255);
     border-radius:20px;
+  
 }
 #aboutText{
     line-height:1.5;
     font-size: 20px;
+    
+}
+
+#orgLink{
+  color:rgb(202, 198, 198);
+  word-spacing: 100px;
+  margin:15px;
+  font-family: roboto;
+}
+#orgLink:hover{
+  cursor:pointer;
+  text-shadow: 2px 2px 2px grey ;
 }
 
 #gradText{
@@ -200,6 +214,12 @@ width: 1060px;
   font-size: 25px;
   position:relative;
   right:2px;
+word-spacing: 15px;
+}
+
+#instagram:hover{
+  cursor:pointer;
+ 
 }
   #two{
     background-color: rgba(54, 83, 72, 0.877);
@@ -219,14 +239,16 @@ width: 1060px;
   }
 
   .bottomHeader{
-    height: 200px;
-    width: 1085px;
+    height: 160px;
+    width: 1080px;
   }
   #secondHeader{
   
       background-color: rgb(103, 126, 117);
       position:relative;
      top:40px;
+     border-bottom-left-radius: 30px;
+     border-bottom-right-radius: 30px;
   }
 
   #secondHeader{
@@ -301,4 +323,7 @@ width: 1060px;
     top:117px; */
   }
 
- 
+ #photoby{
+   position:relative;
+   bottom:1000px
+ }

@@ -77,9 +77,7 @@ return(
   <p className="error"> {errorMessage} </p>
 )} */}
       {/* <button type='button' onClick={handleLogin}>View Profile</button> */}
-      <NavLink exact to='/Welcome'>
-      <button type='button'>Alaina Profile</button>
-      </NavLink>
+      
       </div>
     </form>
    

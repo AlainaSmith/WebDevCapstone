@@ -18,7 +18,7 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 console.log(userfirstName)
 
 return(
-<div>
+<div className='wholething'>
  <div className = 'backgroundContainer'> 
   <div className='backgroundPhoto'>
                 <img id="back" height="1300px" width="1080px" src="https://github.com/AlainaSmith/WebDevCapstone/blob/main/src/photos/back.jpeg?raw=true" />
@@ -65,13 +65,14 @@ return(
             What started out as a break from reality, became my ultimate muse. 
             </p>
             <p id='aboutText'>
-            It was through crafting and woodworking that brought me closer to my Indigenous roots. 
+            It was through crafting and woodworking that brought me closer to my Alaska Native roots. 
              </p>
              <p id='aboutText'>
-I built Hopes & Trees for donating proceeds to preserve the historical signifance of my 
+I built Hopes & Trees for donating partial proceeds generated from sales to help preserve 
+<p id='aboutText'> the historical signifance of Indigenous Peoples from Unangax̂/Aleut regions of Alaska, </p>
 </p>
 <p id='aboutText'>
-ancestors from Alaska, and the future generations to come. 
+and the future generations to come.
             </p>
             </div>
             
@@ -84,11 +85,11 @@ ancestors from Alaska, and the future generations to come.
 </div>
 
 <div className='gradientBars' id='one'>
-<div id='instagram'><AiOutlineInstagram /> </div>
+<p id='orgLink'>Organization-Link Organization-Link Organization-Link Organization-Link</p>
 </div>
 
 <div className='gradientBars' id='two'>
-<div id='facebook'><FaFacebook /></div>
+<div id='instagram'><AiOutlineInstagram /> <FaFacebook /></div>
 </div>
 
 
@@ -116,7 +117,7 @@ ancestors from Alaska, and the future generations to come.
 <Top />
 
 
-<p>Photo by <a href="https://unsplash.com/@filipz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Filip Zrnzević</a> on <a href="https://unsplash.com/s/photos/trees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<p id='photoby'>Photo by <a href="https://unsplash.com/@filipz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Filip Zrnzević</a> on <a href="https://unsplash.com/s/photos/trees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>
           
 </div>

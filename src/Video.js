@@ -6,9 +6,13 @@ import { NavLink } from "react-router-dom";
 const Video = () => {
   return (
 <div className='allclassstuff'>
+
+<p id='missionstatement'>As part of this collective, my mission is to promote those who  </p>
+<p id='missionstatement'>express their passion for the environment and human connection through </p>
+<p id="missionstatement"> personal art forms such as woodworking, jewelry making, food science, music, and more. </p>
   <div id='classes'>
       <p>Classes</p>
-        <div className='thinLineClasses'></div>
+       <div className='thinLineClasses'></div>
 </div>
 
 <div id='classesOff'>

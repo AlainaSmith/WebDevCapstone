@@ -45,6 +45,11 @@ return(
         <ShoppingCartIcon />{" "}
         </Badge>
         </NavLink>
+        <div id='userLink'>
+    <NavLink id='userHeaderBowlPage' exact to='/Welcome'>
+    <p className='userBowlPage'>Hi, {userfirstName}!</p>
+    </NavLink>
+    </div>
 </div>
 </div>
 

@@ -8,13 +8,13 @@
     height: 40px;
     font-family: sans-serif;
     color: rgb(14, 12, 12);
-    background-color: rgba(156, 126, 155, 0.336);
+    background-color: rgb(204, 177, 181);
    position:relative;
-   bottom:4660px;
-   left:1090px;
+   bottom:4440px;
+   left:645px;
    z-index:6
 }
 .top:hover{
-    background-color: rgb(204, 177, 181);
+    background-color: rgb(180, 179, 180);  
     
 }

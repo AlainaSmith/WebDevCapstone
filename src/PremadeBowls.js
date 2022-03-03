@@ -30,7 +30,7 @@ return(
     <img id="woodBowl"  src={require('./photos/IMG_7907.jpg')} class="gallery__img" alt="Image 3"/>
     </figure>
 
-<div className='backPhoto4'><p id='Walnut'>Red Cedar</p></div>
+<div className='backPhoto4'><p id='Walnut'>Osage Orange</p></div>
     <figure class="gallery__item gallery__item--4">
     <img id="woodBowl4"  src={require('./photos/IMG_7902.jpg')}class="gallery__img" alt="Image 4"/>
     </figure>

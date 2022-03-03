@@ -1,7 +1,7 @@
 
 .allclassstuff{
   position:relative;
-  bottom:212px;
+  bottom:244px;
 }
 .wrapper2 {
   max-width: 200%;
@@ -116,7 +116,12 @@ li::before {content: "•"; color: red;
 
 
 
-
+#missionstatement{
+  font-size:18px;
+  position:relative;
+  top:340px;
+  left:80px;
+}
   #classesOff{
     position:relative;
     top:390px;

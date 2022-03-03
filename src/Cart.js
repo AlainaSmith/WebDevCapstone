@@ -96,17 +96,19 @@ return(
 <div className='greyBack'>
     <p id='products'>Products</p>
     <p id='price'>Price</p>
+    <p id='total'>Total</p>
     <div id='rewards'>
     <p>Redeem Rewards</p>
     </div>     
 </div>      
 
-<div className='greyCheckoutBox'>
-    <p id='total'>Total:</p>
+   
     <button id='checkout' onClick={handleCheckout}>Checkout</button>
   
-</div>
 
+<p id='finalsales'>*Your information is secure and will remain confidential upon payment. </p>
+<p id='finalsales'>All sales are final - please email hopes&trees@gmail.com for all inquiries</p>
+<p id='finalsales'>regarding care of products, classes or curious questions! </p>
 
 
 

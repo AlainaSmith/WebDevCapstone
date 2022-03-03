@@ -20,7 +20,7 @@ const ProductLoop = ({data, removeItem}) => {
             <div id='productDescription'><p>{data.product_description}</p></div>
             <div id='productPrice'><p>{data.product_price}</p></div>
             <div id='productTotal'><p>{data.product_total}</p></div>
-            <button id='removeButton' onClick={() => removeItem(data.cart_id)}>Remove</button>
+            <button id='removeButton' onClick={() => removeItem(data.cart_id)}>X</button>
         </div>
     )
 }
