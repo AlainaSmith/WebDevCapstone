@@ -24,6 +24,7 @@
 #points{
     padding:20px;
     font-family: roboto;
+    color: rgb(27, 27, 27);
     }
 .underlinePoints{
      text-decoration: underline;
@@ -36,13 +37,13 @@
 #redeem{
     position:relative;
     right:0px;
-    top:44px;
+    top:60px;
     color:rgb(224, 210, 210);
     font-size: 17px;
     font-family: roboto;
 }
 .rewards{
-    color:rgb(56, 54, 54);
+    color:rgb(34, 34, 34);
     background:rgba(213, 216, 216, 0.609);
     height:400px;
     width:700px;

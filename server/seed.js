@@ -52,15 +52,11 @@ seed: (req, res) => {
         VALUES ('${firstName}', '${lastName}', '${email_address}');
 
 
-
-
         INSERT INTO users 
         (firstName, lastName, email_address, password)
         VALUES ('Alaina', 'Smith', 'as@gmail.com', 'Hello123');
 
      
-        
-
         CREATE TABLE cart(
             cart_id SERIAL PRIMARY KEY,
             user_id REFERENCES users(user_id),
@@ -72,17 +68,6 @@ seed: (req, res) => {
             product_name VARCHAR(100) NOT NULL,
             product_description VARCHAR(1000) NOT NULL,
         );
-
-        
-            
-          
-
-        
-
-       
-
-     
-
 
     `).then(() => {
         console.log('Successfully Registered, please login to continue!')

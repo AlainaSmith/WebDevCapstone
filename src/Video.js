@@ -35,9 +35,8 @@ const Video = () => {
 {/* <div className='oneVideos'> */}
 
   <div id = 'uno'>
- <iframe id='oneVideo' className='marquee2' src="https://player.vimeo.com/video/683080017?h=e90834e3d3&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-  </div>   
-
+  <iframe id='oneVideo' className='marquee2' src="https://player.vimeo.com/video/683080017?h=e90834e3d3&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>   
+</div>
   <div id = 'dos'>
         <iframe id='twoVideo'className='marquee2' src="https://player.vimeo.com/video/679809121?h=5a66e03f37&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
   </div>

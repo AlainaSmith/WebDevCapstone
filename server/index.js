@@ -19,18 +19,12 @@ const sequelize = new Sequelize(DATABASE_URL, {
   }
 })
 
-
 //Middleware
 app.use(express.json());
 app.use(cors());
 app.use(express.static(path.resolve(__dirname, "../build")))
 
 //Put endpoints here
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(publicPath, 'index.html'));
-// });
-
-
 app.post('/seed', seed) 
 console.log(seed)
 
@@ -176,8 +170,6 @@ app.get('/api/WoodBowlTurningClass', async (req, res) => {
 })
 
 
-
-
 app.post('/api/addToCart', async (req, res) => {
   const {user_ID, product_ID} = req.body
   await sequelize.query(`
@@ -189,9 +181,6 @@ app.post('/api/addToCart', async (req, res) => {
   `)
   res.status(200).send("Item added to cart")
 })
-
-
-
 
 
 app.delete('/api/userCart/:id', async (req, res) => {
@@ -208,6 +197,10 @@ app.get('/*', function (req, res) {
 })
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+
+
 
 
 

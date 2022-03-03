@@ -69,7 +69,7 @@ return(
              </p>
              <p id='aboutText'>
 I built Hopes & Trees for donating partial proceeds generated from sales to help preserve 
-<p id='aboutText'> the historical signifance of Indigenous Peoples from Unangax̂/Aleut regions of Alaska, </p>
+<p id='aboutText'> the historical significance of Indigenous Peoples from Unangax̂/Aleut regions of Alaska, </p>
 </p>
 <p id='aboutText'>
 and the future generations to come.

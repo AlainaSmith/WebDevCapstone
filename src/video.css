@@ -121,6 +121,7 @@ li::before {content: "•"; color: red;
   position:relative;
   top:340px;
   left:80px;
+  color:rgb(49, 48, 48)
 }
   #classesOff{
     position:relative;

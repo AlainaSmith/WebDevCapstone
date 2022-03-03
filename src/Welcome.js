@@ -96,7 +96,7 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 <p className='underlinePoints'>
 250 pts
 </p>
-<p>Free class of choice or 40% off!</p>
+<p>Free class of choice!</p>
 </div>
 
 <p id='redeem'>*Redeem Rewards at Checkout</p>

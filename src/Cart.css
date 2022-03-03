@@ -40,21 +40,36 @@ border-radius: 3px;
     color:white;
     position:relative;
     right:130px;
-    bottom:50px
+    bottom:90px
+}
+#onepay{
+    margin:10px
 }
 
+#threepay{
+    margin:10px
+}
+.payments{
+    font-size: 20px;
+    color:white;
+    position:relative;
+    bottom:80px;
+   left:380px;
+    display: inline;
+  letter-spacing: 10;
+}
 #rewards{
-height:20px;
+height:30px;
 width:130px;
 padding:5px;
 background-color: white;
 position:relative;
-left:885px;
-
+left:240px;
+border-radius: 10px;
 bottom:70px;
 }
 #rewards:hover{
-    background-color:rgb(209, 161, 195);
+    background-color:rgb(197, 178, 191);
     cursor: pointer;
 }
 
@@ -67,7 +82,6 @@ position:relative;
 left:860px;
 bottom:320px;
 border-radius: 5px;
-border: 1px black solid;
 z-index:-1
 }
 
@@ -80,13 +94,23 @@ font-size:19px;
 bottom:40px;
 left:240px;
 padding:5px;
-
+border-radius:10px;
 }
 
 #checkout:hover{
-    background-color:rgb(247, 211, 228);
+    background-color:rgb(167, 157, 162);
     cursor: pointer;
 }
+#rewardslocal{
+    
+    color:white;
+    font-size:19px;
+    text-decoration: underline;
+    position:relative;
+    bottom: 90px;
+    left:230px
+}
+
 
 #total{
     position:relative;

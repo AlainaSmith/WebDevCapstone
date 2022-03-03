@@ -20,6 +20,7 @@ left:160px;
  width:100px;
  position:relative;
  bottom: 70px;
+ left:10px;
 }
 #addToCart:hover{
  background-color: rgb(158, 157, 157);

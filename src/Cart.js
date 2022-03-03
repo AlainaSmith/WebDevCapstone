@@ -2,6 +2,10 @@ import React, {useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import './Homepage.css'
 import {FaUserCircle} from 'react-icons/fa'
+
+import {MdPayment} from 'react-icons/md'
+import {FaCcAmazonPay} from 'react-icons/fa'
+import {FaCcApplePay} from 'react-icons/fa'
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Welcome from "./Welcome";
@@ -53,8 +57,12 @@ console.log(userfirstName)
     getFromCart()
 }, [update])
 
+const infoRewards = window.localStorage.getItem('infoRewards')
+ console.log(infoRewards)  
 
-
+const redeemRewards = () => {
+    alert("Enjoy your free class!")
+}
 const handleCheckout = () => {
     alert("	Qaĝaasakung! Thank you for your support, we appreciate you!")
 }
@@ -78,6 +86,11 @@ return(
         <ShoppingCartIcon />{" "}
         </Badge>
         </NavLink>
+        <div id='userLink'>
+    <NavLink id='userHeaderBowlPage' exact to='/Welcome'>
+    <p className='userBowlPage'>Hi, {userfirstName}!</p>
+    </NavLink>
+    </div>
 </div>
 </div>
 
@@ -97,9 +110,10 @@ return(
     <p id='products'>Products</p>
     <p id='price'>Price</p>
     <p id='total'>Total</p>
-    <div id='rewards'>
-    <p>Redeem Rewards</p>
-    </div>     
+    <p id='rewardslocal'>Rewards: {infoRewards}</p>
+
+    <button id='rewards' onClick={redeemRewards}>Redeem Rewards</button>
+      
 </div>      
 
    
@@ -109,9 +123,9 @@ return(
 <p id='finalsales'>*Your information is secure and will remain confidential upon payment. </p>
 <p id='finalsales'>All sales are final - please email hopes&trees@gmail.com for all inquiries</p>
 <p id='finalsales'>regarding care of products, classes or curious questions! </p>
-
-
-
+<p id='onepay' className='payments'><FaCcApplePay /></p>
+<p id='twopay' className='payments'><FaCcAmazonPay /></p>
+<p id='threepay' className='payments'><MdPayment /></p>
  </div>
 
 
