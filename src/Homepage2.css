@@ -1,5 +1,13 @@
 .wholething{
-  height:10px
+  height:10px;
+  position:relative;
+  right:30px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
  #userAccountIcon{
   color: black;
@@ -20,7 +28,7 @@ top:10px;
   }
 .backgroundContainer{
     height:5000px;
-    width:180.6vh;
+    width:183vh;
     /* background-color: rgba(139, 128, 145, 0.801); */
     background-color: rgba(170, 104, 115, 0.671)
 }
@@ -110,7 +118,7 @@ color:rgb(60, 133, 133)
     font-family: roboto;
     display:inline;
     word-spacing: 10%;
-    left:10px
+    
 }
 
 #greet2{
@@ -206,7 +214,7 @@ width: 1060px;
     background-color: rgba(42, 73, 61, 0.493);
     position:relative;
     bottom:430px;
-    left:172px;
+    left:211px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
   }
@@ -226,7 +234,7 @@ word-spacing: 15px;
     background-color: rgba(54, 83, 72, 0.877);
     position:relative;
     bottom:435px;
-    left:172px;
+    left:211px;
   }
 #facebook{
   color:white;
@@ -236,7 +244,7 @@ word-spacing: 15px;
     background-color: rgb(103, 126, 117);
     position:relative;
     bottom:447px;
-    left:172px;
+    left:211px;
   }
 
   .bottomHeader{
@@ -261,14 +269,14 @@ word-spacing: 15px;
     width:60px;
     position:relative;
     bottom:517px;
-    left:179px;
+    left:219px;
     background-color:rgb(88, 38, 38);
   }
   #jewelryLocator{
     height:100px;
     position:relative;
     bottom:-136px;
-    left:179px;
+    left:219px;
     background-color:rgb(88, 38, 38);
     width:10px;
   
@@ -278,7 +286,7 @@ word-spacing: 15px;
     height:100px;
     position:relative;
    top:825px;
-    left:179px;
+    left:219px;
     background-color:rgb(88, 38, 38);
     width:10px;
   }
@@ -287,7 +295,7 @@ word-spacing: 15px;
     height:100px;
     position:relative;
    top:1280px;
-    left:179px;
+    left:219px;
     background-color:rgb(88, 38, 38);
     width:10px;
   }
@@ -306,7 +314,7 @@ word-spacing: 15px;
       position: relative;
       bottom:3635px;
       margin:auto;
-      right:1px
+      left:31px;
   }
 
   #fixed{
@@ -318,7 +326,7 @@ word-spacing: 15px;
 
   .greyHeader{
     height:70px;
-    width:100%;
+    width:2000px;
     background-color: rgba(160, 150, 150, 0.431);
     /* position:absolute;
     top:117px; */

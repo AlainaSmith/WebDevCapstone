@@ -13,14 +13,14 @@ left:160px;
 
 #addToCart{
   z-index:60;
-  background-color: rgb(212, 192, 192);
+  background-color: rgb(212, 202, 202);
   font-family: ariel;
   font-size: 16px;
  height:30px;
  width:100px;
  position:relative;
  bottom: 70px;
- left:10px;
+right:15px
 }
 #addToCart:hover{
  background-color: rgb(158, 157, 157);
@@ -32,7 +32,7 @@ left:160px;
   height:20px;
   width:80px;
   position: relative;
-  left:813px;
+  left:859px;
   bottom:10px;
   z-index:3;
   padding:3px;

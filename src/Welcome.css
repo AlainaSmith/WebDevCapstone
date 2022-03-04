@@ -15,7 +15,7 @@
         height: 340px;
         width:260px;
         position: relative;
-        left:750px;
+        left:770px;
         bottom:1000px;
         box-shadow: 2px 2px 2px 2px rgba(122, 118, 118, 0.198);
         border-radius: 4px;
@@ -52,7 +52,7 @@
     margin:30px;
     position:relative;
     bottom:600px;
-    left:340px
+    left:375px
 
 }
 

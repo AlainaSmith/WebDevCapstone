@@ -4,6 +4,15 @@
     z-index:10
 }
 
+#greyline{
+    width:700px;
+    height:1px;
+    background-color: rgb(71, 69, 69);
+    position:relative;
+    left:400px;
+    bottom:770px;
+}
+
 #myCart{
 position: relative;
 bottom:280px;
@@ -19,7 +28,7 @@ font-family: roboto;
 }
 
 .backgroundContainerCart{
-    height:790px;
+    height:830px;
     background-color: rgba(170, 104, 115, 0.671)
 }
 
@@ -95,6 +104,7 @@ bottom:40px;
 left:240px;
 padding:5px;
 border-radius:10px;
+z-index: 20
 }
 
 #checkout:hover{

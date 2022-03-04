@@ -80,9 +80,8 @@ return(
 <div className='description'>
 <p id='desc'>Description </p>
 <p>
-This is a great class to advance your skills to bowl turning. 
-The course is designed for the beginner to intermediate turner who wants to get a good foundation in turning bowls. 
-Proper tools, blank selection, chucking methods, and form will be covered. Students will leave with their own finished bowl.
+This is a fun course designed for beginners to learn the basics of bowl turning. All tools, wood blanks, techniques and safety precautions will be covered.
+<br></br>Everyone will have ample time to finish a bowl and take it home!
 </p>
 <p id='tuition'>
 Tuition: $80.00

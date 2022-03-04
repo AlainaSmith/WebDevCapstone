@@ -50,6 +50,7 @@ const App = () => {
           <Cart update={update}/> */}
         
          {/* <Header /> */}
+         
     </div>
   );
 }

@@ -18,7 +18,9 @@ const userfirstName = window.localStorage.getItem('userfirstName')
 console.log(userfirstName)
 
 return(
+    
 <div className='wholething'>
+<link rel='icon' href='%PUBLIC_URL%/pinetreeicon.jpeg' />
  <div className = 'backgroundContainer'> 
   <div className='backgroundPhoto'>
                 <img id="back" height="1300px" width="1080px" src="https://github.com/AlainaSmith/WebDevCapstone/blob/main/src/photos/back.jpeg?raw=true" />
@@ -43,7 +45,7 @@ return(
             <ShoppingCartIcon />{" "}
         </Badge>
         </NavLink>
-       
+        
 
 
         {/* <NavLink exact to='/Classes'>
